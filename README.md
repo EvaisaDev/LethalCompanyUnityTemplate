@@ -4,6 +4,7 @@
 **This is a unity template project for making Custom Assets for Lethal Company.**
 
 - This does not include any actual game assets.
+- The scripts included in this are only stubs, they contain no actual game code.
 - Will need to be updated after large game updates.
 
 ## Setup
