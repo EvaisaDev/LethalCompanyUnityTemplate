@@ -97,6 +97,10 @@ public class DeadBodyInfo : MonoBehaviour
 
 	public bool isInShip;
 
+	public bool deactivated;
+
+	public bool overrideSpawnPosition;
+
 	private void FloatBodyToWaterSurface()
 	{
 	}
@@ -146,6 +150,10 @@ public class DeadBodyInfo : MonoBehaviour
 	}
 
 	public void SetBodyPartsKinematic(bool setKinematic = true)
+	{
+	}
+
+	public void DeactivateBody(bool setActive)
 	{
 	}
 

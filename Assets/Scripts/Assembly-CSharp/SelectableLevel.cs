@@ -96,4 +96,6 @@ public class SelectableLevel : ScriptableObject
 	public float daytimeEnemiesProbabilityRange;
 
 	public bool levelIncludesSnowFootprints;
+
+	public string levelIconString;
 }

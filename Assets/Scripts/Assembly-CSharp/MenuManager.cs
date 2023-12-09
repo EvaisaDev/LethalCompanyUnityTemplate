@@ -12,7 +12,7 @@ using UnityEngine.UI;
 public class MenuManager : MonoBehaviour
 {
 	[CompilerGenerated]
-	private sealed class _003CPlayMenuMusicDelayed_003Ed__53 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CPlayMenuMusicDelayed_003Ed__54 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -39,7 +39,7 @@ public class MenuManager : MonoBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CPlayMenuMusicDelayed_003Ed__53(int _003C_003E1__state)
+		public _003CPlayMenuMusicDelayed_003Ed__54(int _003C_003E1__state)
 		{
 		}
 
@@ -66,7 +66,7 @@ public class MenuManager : MonoBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CconnectionTimeOut_003Ed__55 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CconnectionTimeOut_003Ed__56 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -93,7 +93,7 @@ public class MenuManager : MonoBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CconnectionTimeOut_003Ed__55(int _003C_003E1__state)
+		public _003CconnectionTimeOut_003Ed__56(int _003C_003E1__state)
 		{
 		}
 
@@ -120,7 +120,7 @@ public class MenuManager : MonoBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CdelayedStartScene_003Ed__61 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CdelayedStartScene_003Ed__62 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -147,7 +147,7 @@ public class MenuManager : MonoBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CdelayedStartScene_003Ed__61(int _003C_003E1__state)
+		public _003CdelayedStartScene_003Ed__62(int _003C_003E1__state)
 		{
 		}
 
@@ -274,6 +274,8 @@ public class MenuManager : MonoBehaviour
 
 	public Button PleaseConfirmChangesSettingsPanelBackButton;
 
+	public GameObject KeybindsPanel;
+
 	private bool selectingUIThisFrame;
 
 	private GameObject lastSelectedGameObject;
@@ -298,7 +300,7 @@ public class MenuManager : MonoBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CPlayMenuMusicDelayed_003Ed__53))]
+	[IteratorStateMachine(typeof(_003CPlayMenuMusicDelayed_003Ed__54))]
 	private IEnumerator PlayMenuMusicDelayed()
 	{
 		return null;
@@ -308,7 +310,7 @@ public class MenuManager : MonoBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CconnectionTimeOut_003Ed__55))]
+	[IteratorStateMachine(typeof(_003CconnectionTimeOut_003Ed__56))]
 	private IEnumerator connectionTimeOut()
 	{
 		return null;
@@ -334,7 +336,7 @@ public class MenuManager : MonoBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CdelayedStartScene_003Ed__61))]
+	[IteratorStateMachine(typeof(_003CdelayedStartScene_003Ed__62))]
 	private IEnumerator delayedStartScene()
 	{
 		return null;

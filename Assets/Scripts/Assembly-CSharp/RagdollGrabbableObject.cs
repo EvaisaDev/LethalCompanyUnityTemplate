@@ -43,7 +43,7 @@ public class RagdollGrabbableObject : GrabbableObject
 	{
 	}
 
-	public override void GrabItemFromEnemy()
+	public override void GrabItemFromEnemy(EnemyAI enemy)
 	{
 	}
 

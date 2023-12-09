@@ -13,7 +13,7 @@ using UnityEngine.AI;
 public class RoundManager : NetworkBehaviour
 {
 	[CompilerGenerated]
-	private sealed class _003CDetectElevatorRunning_003Ed__120 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CDetectElevatorRunning_003Ed__121 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -40,7 +40,7 @@ public class RoundManager : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CDetectElevatorRunning_003Ed__120(int _003C_003E1__state)
+		public _003CDetectElevatorRunning_003Ed__121(int _003C_003E1__state)
 		{
 		}
 
@@ -67,7 +67,7 @@ public class RoundManager : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CFlickerPoweredLights_003Ed__144 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CFlickerPoweredLights_003Ed__145 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -102,7 +102,7 @@ public class RoundManager : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CFlickerPoweredLights_003Ed__144(int _003C_003E1__state)
+		public _003CFlickerPoweredLights_003Ed__145(int _003C_003E1__state)
 		{
 		}
 
@@ -129,7 +129,7 @@ public class RoundManager : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CLoadNewLevelWait_003Ed__105 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CLoadNewLevelWait_003Ed__106 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -158,7 +158,7 @@ public class RoundManager : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CLoadNewLevelWait_003Ed__105(int _003C_003E1__state)
+		public _003CLoadNewLevelWait_003Ed__106(int _003C_003E1__state)
 		{
 		}
 
@@ -185,7 +185,7 @@ public class RoundManager : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CturnOnLights_003Ed__142 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CturnOnLights_003Ed__143 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -216,7 +216,7 @@ public class RoundManager : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CturnOnLights_003Ed__142(int _003C_003E1__state)
+		public _003CturnOnLights_003Ed__143(int _003C_003E1__state)
 		{
 		}
 
@@ -243,7 +243,7 @@ public class RoundManager : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CwaitForMainEntranceTeleportToSpawn_003Ed__156 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CwaitForMainEntranceTeleportToSpawn_003Ed__157 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -272,7 +272,7 @@ public class RoundManager : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CwaitForMainEntranceTeleportToSpawn_003Ed__156(int _003C_003E1__state)
+		public _003CwaitForMainEntranceTeleportToSpawn_003Ed__157(int _003C_003E1__state)
 		{
 		}
 
@@ -299,7 +299,7 @@ public class RoundManager : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CwaitForScrapToSpawnToSync_003Ed__95 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CwaitForScrapToSpawnToSync_003Ed__96 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -330,7 +330,7 @@ public class RoundManager : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CwaitForScrapToSpawnToSync_003Ed__95(int _003C_003E1__state)
+		public _003CwaitForScrapToSpawnToSync_003Ed__96(int _003C_003E1__state)
 		{
 		}
 
@@ -359,6 +359,8 @@ public class RoundManager : NetworkBehaviour
 	public StartOfRound playersManager;
 
 	public Transform syncedPropsContainer;
+
+	public Transform itemPooledObjectsContainer;
 
 	[Header("Global Game Variables / Balancing")]
 	public float scrapValueMultiplier;
@@ -566,7 +568,7 @@ public class RoundManager : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CwaitForScrapToSpawnToSync_003Ed__95))]
+	[IteratorStateMachine(typeof(_003CwaitForScrapToSpawnToSync_003Ed__96))]
 	private IEnumerator waitForScrapToSpawnToSync(NetworkObjectReference[] spawnedScrap, int[] scrapValues)
 	{
 		return null;
@@ -611,7 +613,7 @@ public class RoundManager : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CLoadNewLevelWait_003Ed__105))]
+	[IteratorStateMachine(typeof(_003CLoadNewLevelWait_003Ed__106))]
 	private IEnumerator LoadNewLevelWait(int randomSeed)
 	{
 		return null;
@@ -677,7 +679,7 @@ public class RoundManager : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CDetectElevatorRunning_003Ed__120))]
+	[IteratorStateMachine(typeof(_003CDetectElevatorRunning_003Ed__121))]
 	private IEnumerator DetectElevatorRunning()
 	{
 		return null;
@@ -740,8 +742,9 @@ public class RoundManager : NetworkBehaviour
 	{
 	}
 
-	public void SpawnEnemyGameObject(Vector3 spawnPosition, float yRot, int enemyNumber)
+	public NetworkObjectReference SpawnEnemyGameObject(Vector3 spawnPosition, float yRot, int enemyNumber, EnemyType enemyType = null)
 	{
+		return default(NetworkObjectReference);
 	}
 
 	public void DespawnEnemyOnServer(NetworkObject enemyNetworkObject)
@@ -775,7 +778,7 @@ public class RoundManager : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CturnOnLights_003Ed__142))]
+	[IteratorStateMachine(typeof(_003CturnOnLights_003Ed__143))]
 	private IEnumerator turnOnLights(bool turnOn)
 	{
 		return null;
@@ -785,7 +788,7 @@ public class RoundManager : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CFlickerPoweredLights_003Ed__144))]
+	[IteratorStateMachine(typeof(_003CFlickerPoweredLights_003Ed__145))]
 	private IEnumerator FlickerPoweredLights(bool flickerFlashlights = false, bool disableFlashlights = false)
 	{
 		return null;
@@ -835,7 +838,7 @@ public class RoundManager : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CwaitForMainEntranceTeleportToSpawn_003Ed__156))]
+	[IteratorStateMachine(typeof(_003CwaitForMainEntranceTeleportToSpawn_003Ed__157))]
 	private IEnumerator waitForMainEntranceTeleportToSpawn()
 	{
 		return null;
@@ -950,7 +953,12 @@ public class RoundManager : NetworkBehaviour
 		return 0;
 	}
 
-	public static Vector3 FindMainEntrancePosition(bool getTeleportPosition = false)
+	public static EntranceTeleport FindMainEntranceScript(bool getOutsideEntrance = false)
+	{
+		return null;
+	}
+
+	public static Vector3 FindMainEntrancePosition(bool getTeleportPosition = false, bool getOutsideEntrance = false)
 	{
 		return default(Vector3);
 	}
@@ -960,7 +968,7 @@ public class RoundManager : NetworkBehaviour
 		return 0;
 	}
 
-	public int GetRandomWeightedIndexList(List<int> weights)
+	public int GetRandomWeightedIndexList(List<int> weights, System.Random randomSeed = null)
 	{
 		return 0;
 	}

@@ -14,7 +14,7 @@ using UnityEngine;
 public class GameNetworkManager : MonoBehaviour
 {
 	[CompilerGenerated]
-	private sealed class _003CDisconnectProcess_003Ed__70 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CDisconnectProcess_003Ed__71 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -41,7 +41,7 @@ public class GameNetworkManager : MonoBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CDisconnectProcess_003Ed__70(int _003C_003E1__state)
+		public _003CDisconnectProcess_003Ed__71(int _003C_003E1__state)
 		{
 		}
 
@@ -69,7 +69,7 @@ public class GameNetworkManager : MonoBehaviour
 
 	[StructLayout(LayoutKind.Auto)]
 	[CompilerGenerated]
-	private struct _003CJoinLobby_003Ed__83 : IAsyncStateMachine
+	private struct _003CJoinLobby_003Ed__85 : IAsyncStateMachine
 	{
 		public int _003C_003E1__state;
 
@@ -107,7 +107,7 @@ public class GameNetworkManager : MonoBehaviour
 
 	[StructLayout(LayoutKind.Auto)]
 	[CompilerGenerated]
-	private struct _003CStartHost_003Ed__82 : IAsyncStateMachine
+	private struct _003CStartHost_003Ed__84 : IAsyncStateMachine
 	{
 		public int _003C_003E1__state;
 
@@ -142,7 +142,7 @@ public class GameNetworkManager : MonoBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CTimeOutLobbyRefresh_003Ed__58 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CTimeOutLobbyRefresh_003Ed__59 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -169,7 +169,7 @@ public class GameNetworkManager : MonoBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CTimeOutLobbyRefresh_003Ed__58(int _003C_003E1__state)
+		public _003CTimeOutLobbyRefresh_003Ed__59(int _003C_003E1__state)
 		{
 		}
 
@@ -196,7 +196,7 @@ public class GameNetworkManager : MonoBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CdelayStartClient_003Ed__87 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CdelayStartClient_003Ed__89 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -221,7 +221,7 @@ public class GameNetworkManager : MonoBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CdelayStartClient_003Ed__87(int _003C_003E1__state)
+		public _003CdelayStartClient_003Ed__89(int _003C_003E1__state)
 		{
 		}
 
@@ -248,7 +248,7 @@ public class GameNetworkManager : MonoBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CwaitFrameBeforeFindingUsername_003Ed__46 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CwaitFrameBeforeFindingUsername_003Ed__47 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -275,7 +275,7 @@ public class GameNetworkManager : MonoBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CwaitFrameBeforeFindingUsername_003Ed__46(int _003C_003E1__state)
+		public _003CwaitFrameBeforeFindingUsername_003Ed__47(int _003C_003E1__state)
 		{
 		}
 
@@ -322,6 +322,8 @@ public class GameNetworkManager : MonoBehaviour
 	public HostSettings lobbyHostSettings;
 
 	public int connectedPlayers;
+
+	public int maxAllowedPlayers;
 
 	private bool hasSubscribedToConnectionCallbacks;
 
@@ -409,7 +411,7 @@ public class GameNetworkManager : MonoBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CwaitFrameBeforeFindingUsername_003Ed__46))]
+	[IteratorStateMachine(typeof(_003CwaitFrameBeforeFindingUsername_003Ed__47))]
 	private IEnumerator waitFrameBeforeFindingUsername()
 	{
 		return null;
@@ -460,7 +462,7 @@ public class GameNetworkManager : MonoBehaviour
 		return false;
 	}
 
-	[IteratorStateMachine(typeof(_003CTimeOutLobbyRefresh_003Ed__58))]
+	[IteratorStateMachine(typeof(_003CTimeOutLobbyRefresh_003Ed__59))]
 	public IEnumerator TimeOutLobbyRefresh()
 	{
 		return null;
@@ -511,7 +513,7 @@ public class GameNetworkManager : MonoBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CDisconnectProcess_003Ed__70))]
+	[IteratorStateMachine(typeof(_003CDisconnectProcess_003Ed__71))]
 	private IEnumerator DisconnectProcess()
 	{
 		return null;
@@ -526,6 +528,10 @@ public class GameNetworkManager : MonoBehaviour
 	}
 
 	private void ResetGameValuesToDefault()
+	{
+	}
+
+	public void ResetStaticVariables()
 	{
 	}
 
@@ -561,12 +567,12 @@ public class GameNetworkManager : MonoBehaviour
 	{
 	}
 
-	[AsyncStateMachine(typeof(_003CStartHost_003Ed__82))]
+	[AsyncStateMachine(typeof(_003CStartHost_003Ed__84))]
 	public void StartHost()
 	{
 	}
 
-	[AsyncStateMachine(typeof(_003CJoinLobby_003Ed__83))]
+	[AsyncStateMachine(typeof(_003CJoinLobby_003Ed__85))]
 	public void JoinLobby(Lobby lobby, SteamId id)
 	{
 	}
@@ -583,7 +589,7 @@ public class GameNetworkManager : MonoBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CdelayStartClient_003Ed__87))]
+	[IteratorStateMachine(typeof(_003CdelayStartClient_003Ed__89))]
 	private IEnumerator delayStartClient()
 	{
 		return null;

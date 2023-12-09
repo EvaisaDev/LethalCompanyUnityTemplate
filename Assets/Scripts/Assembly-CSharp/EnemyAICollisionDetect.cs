@@ -8,6 +8,8 @@ public class EnemyAICollisionDetect : MonoBehaviour, IHittable, INoiseListener, 
 
 	public bool canCollideWithEnemies;
 
+	public bool onlyCollideWhenGrounded;
+
 	private void OnTriggerStay(Collider other)
 	{
 	}

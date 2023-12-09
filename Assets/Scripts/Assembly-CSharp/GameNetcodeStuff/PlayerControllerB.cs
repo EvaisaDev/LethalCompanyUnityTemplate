@@ -16,7 +16,7 @@ namespace GameNetcodeStuff
 	public class PlayerControllerB : NetworkBehaviour, IHittable, IShockableWithGun, IVisibleThreat
 	{
 		[CompilerGenerated]
-		private sealed class _003C_003Ec__DisplayClass291_0
+		private sealed class _003C_003Ec__DisplayClass297_0
 		{
 			public QuickMenuManager quickMenu;
 
@@ -27,7 +27,7 @@ namespace GameNetcodeStuff
 		}
 
 		[CompilerGenerated]
-		private sealed class _003CGrabObject_003Ed__342 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CGrabObject_003Ed__349 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -54,7 +54,7 @@ namespace GameNetcodeStuff
 			}
 
 			[DebuggerHidden]
-			public _003CGrabObject_003Ed__342(int _003C_003E1__state)
+			public _003CGrabObject_003Ed__349(int _003C_003E1__state)
 			{
 			}
 
@@ -81,13 +81,13 @@ namespace GameNetcodeStuff
 		}
 
 		[CompilerGenerated]
-		private sealed class _003CPlayIntroTip_003Ed__291 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CPlayIntroTip_003Ed__297 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
 			private object _003C_003E2__current;
 
-			private _003C_003Ec__DisplayClass291_0 _003C_003E8__1;
+			private _003C_003Ec__DisplayClass297_0 _003C_003E8__1;
 
 			object IEnumerator<object>.Current
 			{
@@ -108,7 +108,7 @@ namespace GameNetcodeStuff
 			}
 
 			[DebuggerHidden]
-			public _003CPlayIntroTip_003Ed__291(int _003C_003E1__state)
+			public _003CPlayIntroTip_003Ed__297(int _003C_003E1__state)
 			{
 			}
 
@@ -135,7 +135,7 @@ namespace GameNetcodeStuff
 		}
 
 		[CompilerGenerated]
-		private sealed class _003CPlayerJump_003Ed__365 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CPlayerJump_003Ed__373 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -162,7 +162,7 @@ namespace GameNetcodeStuff
 			}
 
 			[DebuggerHidden]
-			public _003CPlayerJump_003Ed__365(int _003C_003E1__state)
+			public _003CPlayerJump_003Ed__373(int _003C_003E1__state)
 			{
 			}
 
@@ -189,7 +189,7 @@ namespace GameNetcodeStuff
 		}
 
 		[CompilerGenerated]
-		private sealed class _003CWaitUntilPlayerHasLeftBodyToTeleport_003Ed__441 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CWaitUntilPlayerHasLeftBodyToTeleport_003Ed__454 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -218,7 +218,7 @@ namespace GameNetcodeStuff
 			}
 
 			[DebuggerHidden]
-			public _003CWaitUntilPlayerHasLeftBodyToTeleport_003Ed__441(int _003C_003E1__state)
+			public _003CWaitUntilPlayerHasLeftBodyToTeleport_003Ed__454(int _003C_003E1__state)
 			{
 			}
 
@@ -245,7 +245,7 @@ namespace GameNetcodeStuff
 		}
 
 		[CompilerGenerated]
-		private sealed class _003CplayQuickSpecialAnimation_003Ed__307 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CplayQuickSpecialAnimation_003Ed__313 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -274,7 +274,7 @@ namespace GameNetcodeStuff
 			}
 
 			[DebuggerHidden]
-			public _003CplayQuickSpecialAnimation_003Ed__307(int _003C_003E1__state)
+			public _003CplayQuickSpecialAnimation_003Ed__313(int _003C_003E1__state)
 			{
 			}
 
@@ -301,7 +301,7 @@ namespace GameNetcodeStuff
 		}
 
 		[CompilerGenerated]
-		private sealed class _003CspawnPlayerAnimTimer_003Ed__405 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CspawnPlayerAnimTimer_003Ed__413 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -328,7 +328,7 @@ namespace GameNetcodeStuff
 			}
 
 			[DebuggerHidden]
-			public _003CspawnPlayerAnimTimer_003Ed__405(int _003C_003E1__state)
+			public _003CspawnPlayerAnimTimer_003Ed__413(int _003C_003E1__state)
 			{
 			}
 
@@ -355,7 +355,7 @@ namespace GameNetcodeStuff
 		}
 
 		[CompilerGenerated]
-		private sealed class _003CtimeSpecialAnimation_003Ed__394 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CtimeSpecialAnimation_003Ed__402 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -384,7 +384,7 @@ namespace GameNetcodeStuff
 			}
 
 			[DebuggerHidden]
-			public _003CtimeSpecialAnimation_003Ed__394(int _003C_003E1__state)
+			public _003CtimeSpecialAnimation_003Ed__402(int _003C_003E1__state)
 			{
 			}
 
@@ -411,7 +411,7 @@ namespace GameNetcodeStuff
 		}
 
 		[CompilerGenerated]
-		private sealed class _003CwaitToEndOfFrameToDiscard_003Ed__347 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CwaitToEndOfFrameToDiscard_003Ed__354 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -438,7 +438,7 @@ namespace GameNetcodeStuff
 			}
 
 			[DebuggerHidden]
-			public _003CwaitToEndOfFrameToDiscard_003Ed__347(int _003C_003E1__state)
+			public _003CwaitToEndOfFrameToDiscard_003Ed__354(int _003C_003E1__state)
 			{
 			}
 
@@ -533,6 +533,8 @@ namespace GameNetcodeStuff
 
 		private Vector3 rightArmProceduralTargetBasePosition;
 
+		public Transform leftHandItemTarget;
+
 		public Light nightVision;
 
 		public int currentSuitID;
@@ -552,6 +554,10 @@ namespace GameNetcodeStuff
 		public bool localArmsMatchCamera;
 
 		public Transform localArmsTransform;
+
+		public Collider playerCollider;
+
+		public Collider[] bodyPartSpraypaintColliders;
 
 		[Header("AUDIOS")]
 		public AudioSource movementAudio;
@@ -690,6 +696,8 @@ namespace GameNetcodeStuff
 
 		public float lookSensitivity;
 
+		public bool disableLookInput;
+
 		private float oldLookRot;
 
 		private float targetLookRot;
@@ -766,7 +774,7 @@ namespace GameNetcodeStuff
 
 		public bool isHostPlayerObject;
 
-		private Vector3 oldPlayerPosition;
+		public Vector3 oldPlayerPosition;
 
 		private int previousAnimationState;
 
@@ -907,8 +915,6 @@ namespace GameNetcodeStuff
 
 		private int interactableObjectsMask;
 
-		private int walkableSurfacesMask;
-
 		private int walkableSurfacesNoPlayersMask;
 
 		private RaycastHit hit;
@@ -960,6 +966,8 @@ namespace GameNetcodeStuff
 
 		public bool inSpecialInteractAnimation;
 
+		public bool disableSyncInAnimation;
+
 		public float specialAnimationWeight;
 
 		public bool isClimbingLadder;
@@ -976,6 +984,8 @@ namespace GameNetcodeStuff
 
 		[Header("SPECIAL ITEMS")]
 		public int shipTeleporterId;
+
+		public EnemyAI redirectToEnemy;
 
 		public MeshRenderer mapRadarDirectionIndicator;
 
@@ -1052,6 +1062,8 @@ namespace GameNetcodeStuff
 
 		public bool increasingDrunknessThisFrame;
 
+		public float timeSinceMakingLoudNoise;
+
 		ThreatType IVisibleThreat.type => default(ThreatType);
 
 		float IVisibleThreat.GetVisibility()
@@ -1092,7 +1104,7 @@ namespace GameNetcodeStuff
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CPlayIntroTip_003Ed__291))]
+		[IteratorStateMachine(typeof(_003CPlayIntroTip_003Ed__297))]
 		private IEnumerator PlayIntroTip()
 		{
 			return null;
@@ -1122,7 +1134,7 @@ namespace GameNetcodeStuff
 		{
 		}
 
-		private bool AllowPlayerDeath()
+		public bool AllowPlayerDeath()
 		{
 			return false;
 		}
@@ -1163,7 +1175,7 @@ namespace GameNetcodeStuff
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CplayQuickSpecialAnimation_003Ed__307))]
+		[IteratorStateMachine(typeof(_003CplayQuickSpecialAnimation_003Ed__313))]
 		private IEnumerator playQuickSpecialAnimation(float animTime)
 		{
 			return null;
@@ -1286,7 +1298,7 @@ namespace GameNetcodeStuff
 		{
 		}
 
-		private void SwitchItem_performed(InputAction.CallbackContext context)
+		private void ScrollMouse_performed(InputAction.CallbackContext context)
 		{
 		}
 
@@ -1297,10 +1309,6 @@ namespace GameNetcodeStuff
 
 		[ClientRpc]
 		private void SwitchItemSlotsClientRpc(bool forward)
-		{
-		}
-
-		private void Use_performed(InputAction.CallbackContext context)
 		{
 		}
 
@@ -1317,6 +1325,14 @@ namespace GameNetcodeStuff
 		{
 		}
 
+		private void ItemSecondaryUse_performed(InputAction.CallbackContext context)
+		{
+		}
+
+		private void ItemTertiaryUse_performed(InputAction.CallbackContext context)
+		{
+		}
+
 		private void Interact_performed(InputAction.CallbackContext context)
 		{
 		}
@@ -1325,7 +1341,7 @@ namespace GameNetcodeStuff
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CGrabObject_003Ed__342))]
+		[IteratorStateMachine(typeof(_003CGrabObject_003Ed__349))]
 		private IEnumerator GrabObject()
 		{
 			return null;
@@ -1349,7 +1365,7 @@ namespace GameNetcodeStuff
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CwaitToEndOfFrameToDiscard_003Ed__347))]
+		[IteratorStateMachine(typeof(_003CwaitToEndOfFrameToDiscard_003Ed__354))]
 		private IEnumerator waitToEndOfFrameToDiscard()
 		{
 			return null;
@@ -1396,6 +1412,10 @@ namespace GameNetcodeStuff
 		{
 		}
 
+		public void SetAllItemsInElevator(bool inShipRoom, bool inElevator)
+		{
+		}
+
 		public void SetItemInElevator(bool droppedInShipRoom, bool droppedInElevator, GrabbableObject gObject)
 		{
 		}
@@ -1430,7 +1450,7 @@ namespace GameNetcodeStuff
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CPlayerJump_003Ed__365))]
+		[IteratorStateMachine(typeof(_003CPlayerJump_003Ed__373))]
 		private IEnumerator PlayerJump()
 		{
 			return null;
@@ -1561,7 +1581,7 @@ namespace GameNetcodeStuff
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CtimeSpecialAnimation_003Ed__394))]
+		[IteratorStateMachine(typeof(_003CtimeSpecialAnimation_003Ed__402))]
 		private IEnumerator timeSpecialAnimation(float time)
 		{
 			return null;
@@ -1611,7 +1631,7 @@ namespace GameNetcodeStuff
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CspawnPlayerAnimTimer_003Ed__405))]
+		[IteratorStateMachine(typeof(_003CspawnPlayerAnimTimer_003Ed__413))]
 		private IEnumerator spawnPlayerAnimTimer()
 		{
 			return null;
@@ -1724,6 +1744,10 @@ namespace GameNetcodeStuff
 		{
 		}
 
+		public void CancelSpecialTriggerAnimations()
+		{
+		}
+
 		public void TeleportPlayer(Vector3 pos, bool withRotation = false, float rot = 0f, bool allowInteractTrigger = false, bool enableController = true)
 		{
 		}
@@ -1742,7 +1766,25 @@ namespace GameNetcodeStuff
 		{
 		}
 
-		public void SpawnDeadBody(int playerId, Vector3 bodyVelocity, int causeOfDeath, PlayerControllerB deadPlayerController, int deathAnimation = 0)
+		public void SpawnDeadBody(int playerId, Vector3 bodyVelocity, int causeOfDeath, PlayerControllerB deadPlayerController, int deathAnimation = 0, Transform overridePosition = null)
+		{
+		}
+
+		public void DestroyItemInSlotAndSync(int itemSlot)
+		{
+		}
+
+		[ServerRpc]
+		public void DestroyItemInSlotServerRpc(int itemSlot)
+		{
+		}
+
+		[ClientRpc]
+		public void DestroyItemInSlotClientRpc(int itemSlot)
+		{
+		}
+
+		public void DestroyItemInSlot(int itemSlot)
 		{
 		}
 
@@ -1773,7 +1815,7 @@ namespace GameNetcodeStuff
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CWaitUntilPlayerHasLeftBodyToTeleport_003Ed__441))]
+		[IteratorStateMachine(typeof(_003CWaitUntilPlayerHasLeftBodyToTeleport_003Ed__454))]
 		private IEnumerator WaitUntilPlayerHasLeftBodyToTeleport(Vector3 newBodyPosition)
 		{
 			return null;

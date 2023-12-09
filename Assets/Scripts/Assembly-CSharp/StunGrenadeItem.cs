@@ -9,7 +9,7 @@ using UnityEngine;
 public class StunGrenadeItem : GrabbableObject
 {
 	[CompilerGenerated]
-	private sealed class _003CpullPinAnimation_003Ed__20 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CpullPinAnimation_003Ed__24 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -36,7 +36,7 @@ public class StunGrenadeItem : GrabbableObject
 		}
 
 		[DebuggerHidden]
-		public _003CpullPinAnimation_003Ed__20(int _003C_003E1__state)
+		public _003CpullPinAnimation_003Ed__24(int _003C_003E1__state)
 		{
 		}
 
@@ -62,6 +62,14 @@ public class StunGrenadeItem : GrabbableObject
 		}
 	}
 
+	[Header("Stun grenade settings")]
+	public float TimeToExplode;
+
+	public bool DestroyGrenade;
+
+	public string playerAnimation;
+
+	[Space(3f)]
 	public bool pinPulled;
 
 	public bool inPullingPinAnimation;
@@ -98,6 +106,10 @@ public class StunGrenadeItem : GrabbableObject
 	{
 	}
 
+	public override void DiscardItem()
+	{
+	}
+
 	public override void EquipItem()
 	{
 	}
@@ -110,7 +122,7 @@ public class StunGrenadeItem : GrabbableObject
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CpullPinAnimation_003Ed__20))]
+	[IteratorStateMachine(typeof(_003CpullPinAnimation_003Ed__24))]
 	private IEnumerator pullPinAnimation()
 	{
 		return null;
@@ -120,7 +132,11 @@ public class StunGrenadeItem : GrabbableObject
 	{
 	}
 
-	public void ExplodeGrenade()
+	private void ExplodeStunGrenade(bool destroy = false)
+	{
+	}
+
+	public static void StunExplosion(Vector3 explosionPosition, bool affectAudio, float flashSeverityMultiplier, float enemyStunTime, float flashSeverityDistanceRolloff = 1f, bool isHeldItem = false, PlayerControllerB playerHeldBy = null, PlayerControllerB playerThrownBy = null)
 	{
 	}
 

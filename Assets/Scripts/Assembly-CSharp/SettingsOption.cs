@@ -20,9 +20,17 @@ public class SettingsOption : MonoBehaviour
 	[Header("Key rebinding")]
 	public InputActionReference rebindableAction;
 
+	public int rebindableActionBindingIndex;
+
+	public bool gamepadOnlyRebinding;
+
 	public GameObject waitingForInput;
 
 	public TextMeshProUGUI currentlyUsedKeyText;
+
+	public void CancelRebinds()
+	{
+	}
 
 	public void SetValueToMatchSettings()
 	{

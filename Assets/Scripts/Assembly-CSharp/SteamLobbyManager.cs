@@ -1,3 +1,6 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -10,7 +13,7 @@ public class SteamLobbyManager : MonoBehaviour
 {
 	[StructLayout(LayoutKind.Auto)]
 	[CompilerGenerated]
-	private struct _003CLoadServerList_003Ed__12 : IAsyncStateMachine
+	private struct _003CLoadServerList_003Ed__14 : IAsyncStateMachine
 	{
 		public int _003C_003E1__state;
 
@@ -42,6 +45,72 @@ public class SteamLobbyManager : MonoBehaviour
 		}
 	}
 
+	[CompilerGenerated]
+	private sealed class _003CloadLobbyListAndFilter_003Ed__15 : IEnumerator<object>, IEnumerator, IDisposable
+	{
+		private int _003C_003E1__state;
+
+		private object _003C_003E2__current;
+
+		public SteamLobbyManager _003C_003E4__this;
+
+		private string[] _003CoffensiveWords_003E5__2;
+
+		private int _003Ci_003E5__3;
+
+		private string _003ClobbyName_003E5__4;
+
+		private string _003ClobbyNameNoCapitals_003E5__5;
+
+		private bool _003CnameIsOffensive_003E5__6;
+
+		private int _003Cb_003E5__7;
+
+		object IEnumerator<object>.Current
+		{
+			[DebuggerHidden]
+			get
+			{
+				return null;
+			}
+		}
+
+		object IEnumerator.Current
+		{
+			[DebuggerHidden]
+			get
+			{
+				return null;
+			}
+		}
+
+		[DebuggerHidden]
+		public _003CloadLobbyListAndFilter_003Ed__15(int _003C_003E1__state)
+		{
+		}
+
+		[DebuggerHidden]
+		void IDisposable.Dispose()
+		{
+		}
+
+		private bool MoveNext()
+		{
+			return false;
+		}
+
+		bool IEnumerator.MoveNext()
+		{
+			//ILSpy generated this explicit interface implementation from .override directive in MoveNext
+			return this.MoveNext();
+		}
+
+		[DebuggerHidden]
+		void IEnumerator.Reset()
+		{
+		}
+	}
+
 	private Internet Request;
 
 	private Lobby[] currentLobbyList;
@@ -57,6 +126,10 @@ public class SteamLobbyManager : MonoBehaviour
 	public int sortByDistanceSetting;
 
 	private float refreshServerListTimer;
+
+	public bool censorOffensiveLobbyNames;
+
+	private Coroutine loadLobbyListCoroutine;
 
 	private void Start()
 	{
@@ -74,9 +147,15 @@ public class SteamLobbyManager : MonoBehaviour
 	{
 	}
 
-	[AsyncStateMachine(typeof(_003CLoadServerList_003Ed__12))]
+	[AsyncStateMachine(typeof(_003CLoadServerList_003Ed__14))]
 	public void LoadServerList()
 	{
+	}
+
+	[IteratorStateMachine(typeof(_003CloadLobbyListAndFilter_003Ed__15))]
+	private IEnumerator loadLobbyListAndFilter(Lobby[] lobbyList)
+	{
+		return null;
 	}
 
 	private void Update()

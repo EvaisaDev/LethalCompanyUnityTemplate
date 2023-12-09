@@ -157,6 +157,10 @@ public class ExtensionLadderItem : GrabbableObject
 	{
 	}
 
+	public override void DiscardItemFromEnemy()
+	{
+	}
+
 	public override void ItemActivate(bool used, bool buttonDown = true)
 	{
 	}

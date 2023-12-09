@@ -10,7 +10,7 @@ using UnityEngine;
 public class ManualCameraRenderer : NetworkBehaviour
 {
 	[CompilerGenerated]
-	private sealed class _003CupdateMapTarget_003Ed__44 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CupdateMapTarget_003Ed__45 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -41,7 +41,7 @@ public class ManualCameraRenderer : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CupdateMapTarget_003Ed__44(int _003C_003E1__state)
+		public _003CupdateMapTarget_003Ed__45(int _003C_003E1__state)
 		{
 		}
 
@@ -167,6 +167,10 @@ public class ManualCameraRenderer : NetworkBehaviour
 	{
 	}
 
+	public void FlashRadarBooster(int targetId)
+	{
+	}
+
 	public void PingRadarBooster(int targetId)
 	{
 	}
@@ -193,7 +197,7 @@ public class ManualCameraRenderer : NetworkBehaviour
 		return 0;
 	}
 
-	[IteratorStateMachine(typeof(_003CupdateMapTarget_003Ed__44))]
+	[IteratorStateMachine(typeof(_003CupdateMapTarget_003Ed__45))]
 	private IEnumerator updateMapTarget(int setRadarTargetIndex, bool calledFromRPC = true)
 	{
 		return null;

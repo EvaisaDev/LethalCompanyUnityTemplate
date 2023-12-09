@@ -364,16 +364,16 @@ public class InteractTrigger : NetworkBehaviour
 	}
 
 	[ServerRpc(RequireOwnership = false)]
-	private void StopUsingServerRpc()
+	private void StopUsingServerRpc(int playerUsing)
 	{
 	}
 
 	[ClientRpc]
-	private void StopUsingClientRpc()
+	private void StopUsingClientRpc(int playerUsing)
 	{
 	}
 
-	public void SetInteractTriggerNotInAnimation()
+	public void SetInteractTriggerNotInAnimation(int playerUsing = -1)
 	{
 	}
 

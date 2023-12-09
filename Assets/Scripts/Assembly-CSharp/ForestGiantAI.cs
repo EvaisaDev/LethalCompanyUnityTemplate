@@ -12,7 +12,7 @@ using UnityEngine.Rendering.HighDefinition;
 public class ForestGiantAI : EnemyAI, IVisibleThreat
 {
 	[CompilerGenerated]
-	private sealed class _003CEatPlayerAnimation_003Ed__64 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CEatPlayerAnimation_003Ed__65 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -51,7 +51,7 @@ public class ForestGiantAI : EnemyAI, IVisibleThreat
 		}
 
 		[DebuggerHidden]
-		public _003CEatPlayerAnimation_003Ed__64(int _003C_003E1__state)
+		public _003CEatPlayerAnimation_003Ed__65(int _003C_003E1__state)
 		{
 		}
 
@@ -203,6 +203,10 @@ public class ForestGiantAI : EnemyAI, IVisibleThreat
 	{
 	}
 
+	private void GiantSeePlayerEffect()
+	{
+	}
+
 	public override void Update()
 	{
 	}
@@ -265,7 +269,7 @@ public class ForestGiantAI : EnemyAI, IVisibleThreat
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CEatPlayerAnimation_003Ed__64))]
+	[IteratorStateMachine(typeof(_003CEatPlayerAnimation_003Ed__65))]
 	private IEnumerator EatPlayerAnimation(PlayerControllerB playerBeingEaten, Vector3 enemyPosition, int enemyYRot)
 	{
 		return null;
@@ -276,10 +280,6 @@ public class ForestGiantAI : EnemyAI, IVisibleThreat
 	}
 
 	private void StopKillAnimation()
-	{
-	}
-
-	public override void DetectNoise(Vector3 noisePosition, float noiseLoudness, int timesPlayedInOneSpot = 0, int noiseID = 0)
 	{
 	}
 

@@ -10,7 +10,7 @@ using UnityEngine;
 public class CentipedeAI : EnemyAI
 {
 	[CompilerGenerated]
-	private sealed class _003CUnclingFromPlayer_003Ed__50 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CUnclingFromPlayer_003Ed__51 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -45,7 +45,7 @@ public class CentipedeAI : EnemyAI
 		}
 
 		[DebuggerHidden]
-		public _003CUnclingFromPlayer_003Ed__50(int _003C_003E1__state)
+		public _003CUnclingFromPlayer_003Ed__51(int _003C_003E1__state)
 		{
 		}
 
@@ -72,7 +72,7 @@ public class CentipedeAI : EnemyAI
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CclingToCeiling_003Ed__58 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CclingToCeiling_003Ed__59 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -99,7 +99,7 @@ public class CentipedeAI : EnemyAI
 		}
 
 		[DebuggerHidden]
-		public _003CclingToCeiling_003Ed__58(int _003C_003E1__state)
+		public _003CclingToCeiling_003Ed__59(int _003C_003E1__state)
 		{
 		}
 
@@ -126,7 +126,7 @@ public class CentipedeAI : EnemyAI
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CdelayedShriek_003Ed__68 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CdelayedShriek_003Ed__69 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -153,7 +153,7 @@ public class CentipedeAI : EnemyAI
 		}
 
 		[DebuggerHidden]
-		public _003CdelayedShriek_003Ed__68(int _003C_003E1__state)
+		public _003CdelayedShriek_003Ed__69(int _003C_003E1__state)
 		{
 		}
 
@@ -180,7 +180,7 @@ public class CentipedeAI : EnemyAI
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CfallFromCeiling_003Ed__56 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CfallFromCeiling_003Ed__57 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -215,7 +215,7 @@ public class CentipedeAI : EnemyAI
 		}
 
 		[DebuggerHidden]
-		public _003CfallFromCeiling_003Ed__56(int _003C_003E1__state)
+		public _003CfallFromCeiling_003Ed__57(int _003C_003E1__state)
 		{
 		}
 
@@ -311,6 +311,8 @@ public class CentipedeAI : EnemyAI
 
 	private bool singlePlayerSecondChanceGiven;
 
+	private bool choseHidingSpotNoPlayersNearby;
+
 	public override void Start()
 	{
 	}
@@ -373,7 +375,7 @@ public class CentipedeAI : EnemyAI
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CUnclingFromPlayer_003Ed__50))]
+	[IteratorStateMachine(typeof(_003CUnclingFromPlayer_003Ed__51))]
 	private IEnumerator UnclingFromPlayer(PlayerControllerB playerBeingKilled, bool playerDead = true)
 	{
 		return null;
@@ -401,7 +403,7 @@ public class CentipedeAI : EnemyAI
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CfallFromCeiling_003Ed__56))]
+	[IteratorStateMachine(typeof(_003CfallFromCeiling_003Ed__57))]
 	private IEnumerator fallFromCeiling()
 	{
 		return null;
@@ -412,7 +414,7 @@ public class CentipedeAI : EnemyAI
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CclingToCeiling_003Ed__58))]
+	[IteratorStateMachine(typeof(_003CclingToCeiling_003Ed__59))]
 	private IEnumerator clingToCeiling()
 	{
 		return null;
@@ -458,7 +460,7 @@ public class CentipedeAI : EnemyAI
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CdelayedShriek_003Ed__68))]
+	[IteratorStateMachine(typeof(_003CdelayedShriek_003Ed__69))]
 	private IEnumerator delayedShriek()
 	{
 		return null;

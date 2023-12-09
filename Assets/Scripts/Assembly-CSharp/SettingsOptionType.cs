@@ -14,5 +14,6 @@ public enum SettingsOptionType
 	MasterVolume = 8,
 	FramerateCap = 9,
 	FullscreenType = 10,
-	InvertYAxis = 11
+	InvertYAxis = 11,
+	SpiderSafeMode = 12
 }

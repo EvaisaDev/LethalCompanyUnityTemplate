@@ -39,6 +39,9 @@ public class IngamePlayerSettings : MonoBehaviour
 		[Header("BINDINGS")]
 		public string keyBindings;
 
+		[Header("ACCESSIBILITY")]
+		public bool spiderSafeMode;
+
 		public Settings(bool finishedSetup = true, bool onlineMode = true)
 		{
 		}
@@ -107,6 +110,10 @@ public class IngamePlayerSettings : MonoBehaviour
 	{
 	}
 
+	private void SetSpiderSafeMode()
+	{
+	}
+
 	private void SetInvertYAxis()
 	{
 	}
@@ -163,11 +170,11 @@ public class IngamePlayerSettings : MonoBehaviour
 	{
 	}
 
-	public void RebindKey(InputActionReference rebindableAction, SettingsOption optionUI)
+	public void RebindKey(InputActionReference rebindableAction, SettingsOption optionUI, int rebindIndex, bool gamepadRebinding = false)
 	{
 	}
 
-	public void CompleteRebind(SettingsOption optionUI)
+	public void CompleteRebind(SettingsOption optionUI, bool getBindingIndexManually, int setBindingIndex = 0)
 	{
 	}
 

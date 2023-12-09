@@ -11,5 +11,6 @@ public enum CauseOfDeath
 	Crushing = 8,
 	Drowning = 9,
 	Abandoned = 10,
-	Electrocution = 11
+	Electrocution = 11,
+	Kicking = 12
 }

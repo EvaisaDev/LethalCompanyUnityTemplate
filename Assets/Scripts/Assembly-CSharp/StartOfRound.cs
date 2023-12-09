@@ -17,7 +17,38 @@ using UnityEngine.Video;
 public class StartOfRound : NetworkBehaviour
 {
 	[CompilerGenerated]
-	private sealed class _003CEndOfGame_003Ed__245 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003C_003Ec__DisplayClass212_0
+	{
+		public StartOfRound _003C_003E4__this;
+
+		public float startTime;
+
+		internal bool _003CStartSpatialVoiceChat_003Eb__0()
+		{
+			return false;
+		}
+
+		internal bool _003CStartSpatialVoiceChat_003Eb__1()
+		{
+			return false;
+		}
+	}
+
+	[CompilerGenerated]
+	private sealed class _003C_003Ec__DisplayClass307_0
+	{
+		public NetworkObjectReference objectRef;
+
+		public NetworkObject testRoomNetObject;
+
+		internal bool _003CSetTestRoomDebug_003Eb__0()
+		{
+			return false;
+		}
+	}
+
+	[CompilerGenerated]
+	private sealed class _003CEndOfGame_003Ed__255 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -50,7 +81,7 @@ public class StartOfRound : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CEndOfGame_003Ed__245(int _003C_003E1__state)
+		public _003CEndOfGame_003Ed__255(int _003C_003E1__state)
 		{
 		}
 
@@ -77,7 +108,7 @@ public class StartOfRound : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003COpenShipDoors_003Ed__230 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003COpenShipDoors_003Ed__240 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -104,7 +135,7 @@ public class StartOfRound : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003COpenShipDoors_003Ed__230(int _003C_003E1__state)
+		public _003COpenShipDoors_003Ed__240(int _003C_003E1__state)
 		{
 		}
 
@@ -131,7 +162,7 @@ public class StartOfRound : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CResetDissonanceCommsComponent_003Ed__263 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CResetDissonanceCommsComponent_003Ed__275 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -158,7 +189,7 @@ public class StartOfRound : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CResetDissonanceCommsComponent_003Ed__263(int _003C_003E1__state)
+		public _003CResetDissonanceCommsComponent_003Ed__275(int _003C_003E1__state)
 		{
 		}
 
@@ -185,13 +216,15 @@ public class StartOfRound : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CStartSpatialVoiceChat_003Ed__202 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CSetTestRoomDebug_003Ed__307 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
 		private object _003C_003E2__current;
 
-		public StartOfRound _003C_003E4__this;
+		public NetworkObjectReference objectRef;
+
+		private _003C_003Ec__DisplayClass307_0 _003C_003E8__1;
 
 		object IEnumerator<object>.Current
 		{
@@ -212,7 +245,7 @@ public class StartOfRound : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CStartSpatialVoiceChat_003Ed__202(int _003C_003E1__state)
+		public _003CSetTestRoomDebug_003Ed__307(int _003C_003E1__state)
 		{
 		}
 
@@ -239,7 +272,63 @@ public class StartOfRound : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CTravelToLevelEffects_003Ed__281 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CStartSpatialVoiceChat_003Ed__212 : IEnumerator<object>, IEnumerator, IDisposable
+	{
+		private int _003C_003E1__state;
+
+		private object _003C_003E2__current;
+
+		public StartOfRound _003C_003E4__this;
+
+		private _003C_003Ec__DisplayClass212_0 _003C_003E8__1;
+
+		object IEnumerator<object>.Current
+		{
+			[DebuggerHidden]
+			get
+			{
+				return null;
+			}
+		}
+
+		object IEnumerator.Current
+		{
+			[DebuggerHidden]
+			get
+			{
+				return null;
+			}
+		}
+
+		[DebuggerHidden]
+		public _003CStartSpatialVoiceChat_003Ed__212(int _003C_003E1__state)
+		{
+		}
+
+		[DebuggerHidden]
+		void IDisposable.Dispose()
+		{
+		}
+
+		private bool MoveNext()
+		{
+			return false;
+		}
+
+		bool IEnumerator.MoveNext()
+		{
+			//ILSpy generated this explicit interface implementation from .override directive in MoveNext
+			return this.MoveNext();
+		}
+
+		[DebuggerHidden]
+		void IEnumerator.Reset()
+		{
+		}
+	}
+
+	[CompilerGenerated]
+	private sealed class _003CTravelToLevelEffects_003Ed__293 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -270,7 +359,7 @@ public class StartOfRound : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CTravelToLevelEffects_003Ed__281(int _003C_003E1__state)
+		public _003CTravelToLevelEffects_003Ed__293(int _003C_003E1__state)
 		{
 		}
 
@@ -297,7 +386,7 @@ public class StartOfRound : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CUpdatePlayerVoiceEffectsOnDelay_003Ed__203 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CUpdatePlayerVoiceEffectsOnDelay_003Ed__213 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -324,7 +413,7 @@ public class StartOfRound : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CUpdatePlayerVoiceEffectsOnDelay_003Ed__203(int _003C_003E1__state)
+		public _003CUpdatePlayerVoiceEffectsOnDelay_003Ed__213(int _003C_003E1__state)
 		{
 		}
 
@@ -351,7 +440,7 @@ public class StartOfRound : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CfadeVolume_003Ed__242 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CfadeVolume_003Ed__252 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -382,7 +471,7 @@ public class StartOfRound : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CfadeVolume_003Ed__242(int _003C_003E1__state)
+		public _003CfadeVolume_003Ed__252(int _003C_003E1__state)
 		{
 		}
 
@@ -409,7 +498,7 @@ public class StartOfRound : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CfirstDayAnimation_003Ed__255 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CfirstDayAnimation_003Ed__267 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -438,7 +527,7 @@ public class StartOfRound : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CfirstDayAnimation_003Ed__255(int _003C_003E1__state)
+		public _003CfirstDayAnimation_003Ed__267(int _003C_003E1__state)
 		{
 		}
 
@@ -465,7 +554,7 @@ public class StartOfRound : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CgameOverAnimation_003Ed__226 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CgameOverAnimation_003Ed__236 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -494,7 +583,7 @@ public class StartOfRound : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CgameOverAnimation_003Ed__226(int _003C_003E1__state)
+		public _003CgameOverAnimation_003Ed__236(int _003C_003E1__state)
 		{
 		}
 
@@ -521,7 +610,7 @@ public class StartOfRound : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CopeningDoorsSequence_003Ed__231 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CopeningDoorsSequence_003Ed__241 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -550,7 +639,7 @@ public class StartOfRound : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CopeningDoorsSequence_003Ed__231(int _003C_003E1__state)
+		public _003CopeningDoorsSequence_003Ed__241(int _003C_003E1__state)
 		{
 		}
 
@@ -577,7 +666,7 @@ public class StartOfRound : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CplayDaysLeftAlertSFXDelayed_003Ed__247 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CplayDaysLeftAlertSFXDelayed_003Ed__258 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -604,7 +693,7 @@ public class StartOfRound : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CplayDaysLeftAlertSFXDelayed_003Ed__247(int _003C_003E1__state)
+		public _003CplayDaysLeftAlertSFXDelayed_003Ed__258(int _003C_003E1__state)
 		{
 		}
 
@@ -631,7 +720,7 @@ public class StartOfRound : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CplayRandomShipAudio_003Ed__262 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CplayRandomShipAudio_003Ed__274 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -660,7 +749,7 @@ public class StartOfRound : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CplayRandomShipAudio_003Ed__262(int _003C_003E1__state)
+		public _003CplayRandomShipAudio_003Ed__274(int _003C_003E1__state)
 		{
 		}
 
@@ -687,7 +776,7 @@ public class StartOfRound : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CplayersFiredGameOver_003Ed__251 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CplayersFiredGameOver_003Ed__263 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -714,7 +803,7 @@ public class StartOfRound : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CplayersFiredGameOver_003Ed__251(int _003C_003E1__state)
+		public _003CplayersFiredGameOver_003Ed__263(int _003C_003E1__state)
 		{
 		}
 
@@ -741,7 +830,7 @@ public class StartOfRound : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CsetPlayerToSpawnPosition_003Ed__218 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CsetPlayerToSpawnPosition_003Ed__228 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -772,7 +861,7 @@ public class StartOfRound : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CsetPlayerToSpawnPosition_003Ed__218(int _003C_003E1__state)
+		public _003CsetPlayerToSpawnPosition_003Ed__228(int _003C_003E1__state)
 		{
 		}
 
@@ -799,7 +888,7 @@ public class StartOfRound : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CunloadSceneForAllPlayers_003Ed__239 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CunloadSceneForAllPlayers_003Ed__249 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -826,7 +915,7 @@ public class StartOfRound : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CunloadSceneForAllPlayers_003Ed__239(int _003C_003E1__state)
+		public _003CunloadSceneForAllPlayers_003Ed__249(int _003C_003E1__state)
 		{
 		}
 
@@ -853,7 +942,7 @@ public class StartOfRound : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CwaitingForOtherPlayersToRevive_003Ed__265 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CwaitingForOtherPlayersToRevive_003Ed__277 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -880,7 +969,7 @@ public class StartOfRound : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CwaitingForOtherPlayersToRevive_003Ed__265(int _003C_003E1__state)
+		public _003CwaitingForOtherPlayersToRevive_003Ed__277(int _003C_003E1__state)
 		{
 		}
 
@@ -908,6 +997,9 @@ public class StartOfRound : NetworkBehaviour
 
 	public bool shouldApproveConnection;
 
+	public bool allowLocalPlayerDeath;
+
+	[Space(3f)]
 	public int connectedPlayersAmount;
 
 	public int thisClientPlayerId;
@@ -1001,6 +1093,10 @@ public class StartOfRound : NetworkBehaviour
 
 	public GameObject testRoom;
 
+	public GameObject testRoomPrefab;
+
+	public Transform testRoomSpawnPosition;
+
 	public bool localClientHasControl;
 
 	public RuntimeAnimatorController localClientAnimatorController;
@@ -1015,9 +1111,13 @@ public class StartOfRound : NetworkBehaviour
 
 	public int collidersAndRoomMaskAndDefault;
 
+	public int collidersRoomMaskDefaultAndPlayers;
+
 	public int collidersRoomDefaultAndFoliage;
 
 	public int allPlayersCollideWithMask;
+
+	public int walkableSurfacesMask;
 
 	[Header("Physics")]
 	public Collider[] PlayerPhysicsColliders;
@@ -1273,6 +1373,16 @@ public class StartOfRound : NetworkBehaviour
 	[Space(3f)]
 	public string[] randomNames;
 
+	public float timeAtStartOfRun;
+
+	private int allScrapValueCollected;
+
+	public float playerLookMagnitudeThisFrame;
+
+	public float timeAtMakingLastPersonalMovement;
+
+	public Transform[] insideShipPositions;
+
 	public static StartOfRound Instance
 	{
 		[CompilerGenerated]
@@ -1290,7 +1400,7 @@ public class StartOfRound : NetworkBehaviour
 	{
 	}
 
-	private void ResetFootprintObjects()
+	private void ResetPooledObjects(bool destroy = false)
 	{
 	}
 
@@ -1391,13 +1501,13 @@ public class StartOfRound : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CStartSpatialVoiceChat_003Ed__202))]
+	[IteratorStateMachine(typeof(_003CStartSpatialVoiceChat_003Ed__212))]
 	private IEnumerator StartSpatialVoiceChat()
 	{
 		return null;
 	}
 
-	[IteratorStateMachine(typeof(_003CUpdatePlayerVoiceEffectsOnDelay_003Ed__203))]
+	[IteratorStateMachine(typeof(_003CUpdatePlayerVoiceEffectsOnDelay_003Ed__213))]
 	private IEnumerator UpdatePlayerVoiceEffectsOnDelay()
 	{
 		return null;
@@ -1466,7 +1576,7 @@ public class StartOfRound : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CsetPlayerToSpawnPosition_003Ed__218))]
+	[IteratorStateMachine(typeof(_003CsetPlayerToSpawnPosition_003Ed__228))]
 	private IEnumerator setPlayerToSpawnPosition(Transform playerBody, Vector3 spawnPos)
 	{
 		return null;
@@ -1501,7 +1611,7 @@ public class StartOfRound : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CgameOverAnimation_003Ed__226))]
+	[IteratorStateMachine(typeof(_003CgameOverAnimation_003Ed__236))]
 	private IEnumerator gameOverAnimation(bool leavingOnMidnight)
 	{
 		return null;
@@ -1520,13 +1630,13 @@ public class StartOfRound : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003COpenShipDoors_003Ed__230))]
+	[IteratorStateMachine(typeof(_003COpenShipDoors_003Ed__240))]
 	private IEnumerator OpenShipDoors()
 	{
 		return null;
 	}
 
-	[IteratorStateMachine(typeof(_003CopeningDoorsSequence_003Ed__231))]
+	[IteratorStateMachine(typeof(_003CopeningDoorsSequence_003Ed__241))]
 	public IEnumerator openingDoorsSequence()
 	{
 		return null;
@@ -1562,7 +1672,7 @@ public class StartOfRound : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CunloadSceneForAllPlayers_003Ed__239))]
+	[IteratorStateMachine(typeof(_003CunloadSceneForAllPlayers_003Ed__249))]
 	private IEnumerator unloadSceneForAllPlayers()
 	{
 		return null;
@@ -1578,7 +1688,7 @@ public class StartOfRound : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CfadeVolume_003Ed__242))]
+	[IteratorStateMachine(typeof(_003CfadeVolume_003Ed__252))]
 	private IEnumerator fadeVolume(float finalVolume)
 	{
 		return null;
@@ -1592,8 +1702,13 @@ public class StartOfRound : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CEndOfGame_003Ed__245))]
+	[IteratorStateMachine(typeof(_003CEndOfGame_003Ed__255))]
 	private IEnumerator EndOfGame(int bodiesInsured = 0, int connectedPlayersOnServer = 0)
+	{
+		return null;
+	}
+
+	private int[] GetEndgameStatsInOrder()
 	{
 		return null;
 	}
@@ -1602,7 +1717,7 @@ public class StartOfRound : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CplayDaysLeftAlertSFXDelayed_003Ed__247))]
+	[IteratorStateMachine(typeof(_003CplayDaysLeftAlertSFXDelayed_003Ed__258))]
 	private IEnumerator playDaysLeftAlertSFXDelayed()
 	{
 		return null;
@@ -1617,13 +1732,18 @@ public class StartOfRound : NetworkBehaviour
 	{
 	}
 
-	[ClientRpc]
-	public void FirePlayersAfterDeadlineClientRpc(int[] endGameStats)
+	[ServerRpc]
+	public void ManuallyEjectPlayersServerRpc()
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CplayersFiredGameOver_003Ed__251))]
-	private IEnumerator playersFiredGameOver()
+	[ClientRpc]
+	public void FirePlayersAfterDeadlineClientRpc(int[] endGameStats, bool abridgedVersion = false)
+	{
+	}
+
+	[IteratorStateMachine(typeof(_003CplayersFiredGameOver_003Ed__263))]
+	private IEnumerator playersFiredGameOver(bool abridgedVersion)
 	{
 		return null;
 	}
@@ -1641,7 +1761,7 @@ public class StartOfRound : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CfirstDayAnimation_003Ed__255))]
+	[IteratorStateMachine(typeof(_003CfirstDayAnimation_003Ed__267))]
 	private IEnumerator firstDayAnimation(bool waitForMenuToClose)
 	{
 		return null;
@@ -1673,13 +1793,13 @@ public class StartOfRound : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CplayRandomShipAudio_003Ed__262))]
+	[IteratorStateMachine(typeof(_003CplayRandomShipAudio_003Ed__274))]
 	private IEnumerator playRandomShipAudio()
 	{
 		return null;
 	}
 
-	[IteratorStateMachine(typeof(_003CResetDissonanceCommsComponent_003Ed__263))]
+	[IteratorStateMachine(typeof(_003CResetDissonanceCommsComponent_003Ed__275))]
 	private IEnumerator ResetDissonanceCommsComponent()
 	{
 		return null;
@@ -1690,7 +1810,7 @@ public class StartOfRound : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CwaitingForOtherPlayersToRevive_003Ed__265))]
+	[IteratorStateMachine(typeof(_003CwaitingForOtherPlayersToRevive_003Ed__277))]
 	private IEnumerator waitingForOtherPlayersToRevive()
 	{
 		return null;
@@ -1764,7 +1884,7 @@ public class StartOfRound : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CTravelToLevelEffects_003Ed__281))]
+	[IteratorStateMachine(typeof(_003CTravelToLevelEffects_003Ed__293))]
 	private IEnumerator TravelToLevelEffects()
 	{
 		return null;
@@ -1810,5 +1930,45 @@ public class StartOfRound : NetworkBehaviour
 
 	public override void OnDestroy()
 	{
+	}
+
+	[ServerRpc]
+	public void Debug_EnableTestRoomServerRpc(bool enable)
+	{
+	}
+
+	public bool IsClientFriendsWithHost()
+	{
+		return false;
+	}
+
+	[ClientRpc]
+	public void Debug_EnableTestRoomClientRpc(bool enable, NetworkObjectReference objectRef = default(NetworkObjectReference))
+	{
+	}
+
+	[IteratorStateMachine(typeof(_003CSetTestRoomDebug_003Ed__307))]
+	private IEnumerator SetTestRoomDebug(NetworkObjectReference objectRef)
+	{
+		return null;
+	}
+
+	[ServerRpc]
+	public void Debug_ToggleAllowDeathServerRpc()
+	{
+	}
+
+	[ClientRpc]
+	public void Debug_ToggleAllowDeathClientRpc(bool allowDeath)
+	{
+	}
+
+	public void SetDiscordStatusDetails()
+	{
+	}
+
+	public int GetValueOfAllScrap(bool onlyScrapCollected = true)
+	{
+		return 0;
 	}
 }

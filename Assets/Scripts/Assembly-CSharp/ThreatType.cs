@@ -7,5 +7,6 @@ public enum ThreatType
 	Projectile = 1,
 	Bees = 2,
 	EyelessDog = 3,
-	ForestGiant = 4
+	ForestGiant = 4,
+	Item = 5
 }

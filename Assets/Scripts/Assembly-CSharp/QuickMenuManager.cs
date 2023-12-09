@@ -26,6 +26,8 @@ public class QuickMenuManager : MonoBehaviour
 
 	public TextMeshProUGUI ConfirmKickPlayerText;
 
+	public GameObject KeybindsPanel;
+
 	public bool isMenuOpen;
 
 	private int currentMicrophoneDevice;
@@ -51,8 +53,80 @@ public class QuickMenuManager : MonoBehaviour
 
 	private int playerObjToKick;
 
+	[Header("Debug menu")]
+	public GameObject[] doorGameObjects;
+
+	public Collider outOfBoundsCollider;
+
+	public GameObject debugMenuUI;
+
+	public SelectableLevel testAllEnemiesLevel;
+
+	[Space(3f)]
+	private int enemyToSpawnId;
+
+	[Space(3f)]
+	private int enemyTypeId;
+
+	[Space(3f)]
+	private int itemToSpawnId;
+
+	[Space(3f)]
+	private int numberEnemyToSpawn;
+
+	public Transform[] debugEnemySpawnPositions;
+
+	public TMP_Dropdown debugEnemyDropdown;
+
+	public TMP_Dropdown allItemsDropdown;
+
 	private void Start()
 	{
+	}
+
+	public void Debug_SetAllItemsDropdownOptions()
+	{
+	}
+
+	public void Debug_SpawnItem()
+	{
+	}
+
+	public void Debug_SetItemToSpawn(int itemId)
+	{
+	}
+
+	public void Debug_ToggleTestRoom()
+	{
+	}
+
+	public void Debug_ToggleAllowDeath()
+	{
+	}
+
+	public void Debug_SetEnemyType(int enemyType)
+	{
+	}
+
+	private void Debug_SetEnemyDropdownOptions()
+	{
+	}
+
+	public void Debug_SetEnemyToSpawn(int enemyId)
+	{
+	}
+
+	public void Debug_SetNumberToSpawn(string numString)
+	{
+	}
+
+	public void Debug_SpawnEnemy()
+	{
+	}
+
+	private bool CanEnableDebugMenu()
+	{
+		return false;
 	}
 
 	public void OpenQuickMenu()

@@ -10,6 +10,8 @@ public abstract class GrabbableObject : NetworkBehaviour
 
 	public bool isHeldByEnemy;
 
+	public bool deactivated;
+
 	[Space(3f)]
 	public Transform parentObject;
 
@@ -43,7 +45,6 @@ public abstract class GrabbableObject : NetworkBehaviour
 	[Space(10f)]
 	public float useCooldown;
 
-	[HideInInspector]
 	public float currentUseCooldown;
 
 	[Space(10f)]
@@ -68,7 +69,6 @@ public abstract class GrabbableObject : NetworkBehaviour
 
 	private int isSendingItemRPC;
 
-	[HideInInspector]
 	public bool scrapPersistedThroughRounds;
 
 	public bool heldByPlayerOnServer;
@@ -116,7 +116,7 @@ public abstract class GrabbableObject : NetworkBehaviour
 	{
 	}
 
-	public void SetControlTipsForItem()
+	public virtual void SetControlTipsForItem()
 	{
 	}
 
@@ -149,7 +149,7 @@ public abstract class GrabbableObject : NetworkBehaviour
 	{
 	}
 
-	public virtual void GrabItemFromEnemy()
+	public virtual void GrabItemFromEnemy(EnemyAI enemy)
 	{
 	}
 
@@ -158,6 +158,10 @@ public abstract class GrabbableObject : NetworkBehaviour
 	}
 
 	public virtual void ChargeBatteries()
+	{
+	}
+
+	public virtual void DestroyObjectInHand(PlayerControllerB playerHolding)
 	{
 	}
 
@@ -204,6 +208,14 @@ public abstract class GrabbableObject : NetworkBehaviour
 	}
 
 	public virtual void Update()
+	{
+	}
+
+	public virtual void OnHitGround()
+	{
+	}
+
+	private void PlayDropSFX()
 	{
 	}
 

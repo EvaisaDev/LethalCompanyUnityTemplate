@@ -19,6 +19,8 @@ public class RadarBoosterItem : GrabbableObject
 
 	public AudioClip turnOffSFX;
 
+	public AudioClip flashSFX;
+
 	public string radarBoosterName;
 
 	private bool setRandomBoosterName;
@@ -30,6 +32,10 @@ public class RadarBoosterItem : GrabbableObject
 	private float timeSincePlayingPingAudio;
 
 	private int radarBoosterNameIndex;
+
+	private float flashCooldown;
+
+	public Transform radarSpherePosition;
 
 	public override void Start()
 	{
@@ -49,6 +55,24 @@ public class RadarBoosterItem : GrabbableObject
 	}
 
 	public override void LoadItemSaveData(int saveData)
+	{
+	}
+
+	public void FlashAndSync()
+	{
+	}
+
+	[ServerRpc(RequireOwnership = false)]
+	public void RadarBoosterFlashServerRpc()
+	{
+	}
+
+	[ClientRpc]
+	public void RadarBoosterFlashClientRpc()
+	{
+	}
+
+	public void Flash()
 	{
 	}
 

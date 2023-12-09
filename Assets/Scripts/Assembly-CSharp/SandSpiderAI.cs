@@ -11,7 +11,7 @@ using UnityEngine.AI;
 public class SandSpiderAI : EnemyAI
 {
 	[CompilerGenerated]
-	private sealed class _003C_003Ec__DisplayClass77_0
+	private sealed class _003C_003Ec__DisplayClass80_0
 	{
 		public int playerId;
 
@@ -24,7 +24,7 @@ public class SandSpiderAI : EnemyAI
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CWaitForBodyToGrab_003Ed__77 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CWaitForBodyToGrab_003Ed__80 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -32,7 +32,7 @@ public class SandSpiderAI : EnemyAI
 
 		public int playerId;
 
-		private _003C_003Ec__DisplayClass77_0 _003C_003E8__1;
+		private _003C_003Ec__DisplayClass80_0 _003C_003E8__1;
 
 		public SandSpiderAI _003C_003E4__this;
 
@@ -55,7 +55,7 @@ public class SandSpiderAI : EnemyAI
 		}
 
 		[DebuggerHidden]
-		public _003CWaitForBodyToGrab_003Ed__77(int _003C_003E1__state)
+		public _003CWaitForBodyToGrab_003Ed__80(int _003C_003E1__state)
 		{
 		}
 
@@ -82,7 +82,7 @@ public class SandSpiderAI : EnemyAI
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CturnBodyIntoWeb_003Ed__67 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CturnBodyIntoWeb_003Ed__70 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -109,7 +109,7 @@ public class SandSpiderAI : EnemyAI
 		}
 
 		[DebuggerHidden]
-		public _003CturnBodyIntoWeb_003Ed__67(int _003C_003E1__state)
+		public _003CturnBodyIntoWeb_003Ed__70(int _003C_003E1__state)
 		{
 		}
 
@@ -265,6 +265,12 @@ public class SandSpiderAI : EnemyAI
 
 	private int health;
 
+	public MeshRenderer spiderSafeModeMesh;
+
+	public SkinnedMeshRenderer spiderNormalMesh;
+
+	private bool spiderSafeEnabled;
+
 	public override void Start()
 	{
 	}
@@ -273,7 +279,7 @@ public class SandSpiderAI : EnemyAI
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CturnBodyIntoWeb_003Ed__67))]
+	[IteratorStateMachine(typeof(_003CturnBodyIntoWeb_003Ed__70))]
 	private IEnumerator turnBodyIntoWeb()
 	{
 		return null;
@@ -321,7 +327,7 @@ public class SandSpiderAI : EnemyAI
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CWaitForBodyToGrab_003Ed__77))]
+	[IteratorStateMachine(typeof(_003CWaitForBodyToGrab_003Ed__80))]
 	private IEnumerator WaitForBodyToGrab(int playerId)
 	{
 		return null;

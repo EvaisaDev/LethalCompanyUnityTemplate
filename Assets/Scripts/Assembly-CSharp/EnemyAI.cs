@@ -11,7 +11,7 @@ using UnityEngine.AI;
 public abstract class EnemyAI : NetworkBehaviour
 {
 	[CompilerGenerated]
-	private sealed class _003CChooseNextNodeInSearchRoutine_003Ed__86 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CChooseNextNodeInSearchRoutine_003Ed__88 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -46,7 +46,7 @@ public abstract class EnemyAI : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CChooseNextNodeInSearchRoutine_003Ed__86(int _003C_003E1__state)
+		public _003CChooseNextNodeInSearchRoutine_003Ed__88(int _003C_003E1__state)
 		{
 		}
 
@@ -73,7 +73,7 @@ public abstract class EnemyAI : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CCurrentSearchCoroutine_003Ed__84 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CCurrentSearchCoroutine_003Ed__86 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -104,7 +104,7 @@ public abstract class EnemyAI : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CCurrentSearchCoroutine_003Ed__84(int _003C_003E1__state)
+		public _003CCurrentSearchCoroutine_003Ed__86(int _003C_003E1__state)
 		{
 		}
 
@@ -216,6 +216,8 @@ public abstract class EnemyAI : NetworkBehaviour
 
 	public Vector3 destination;
 
+	public float addPlayerVelocityToDestination;
+
 	private float updateDestinationInterval;
 
 	public float syncMovementSpeed;
@@ -264,6 +266,8 @@ public abstract class EnemyAI : NetworkBehaviour
 	public bool debugEnemyAI;
 
 	private bool removedPowerLevel;
+
+	public bool isOutside;
 
 	public virtual void SetEnemyStunned(bool setToStunned, float setToStunTime = 1f, PlayerControllerB setStunnedByPlayer = null)
 	{
@@ -334,7 +338,7 @@ public abstract class EnemyAI : NetworkBehaviour
 		return null;
 	}
 
-	public PlayerControllerB CheckLineOfSightForClosestPlayer(float width = 45f, int range = 60, int proximityAwareness = -1)
+	public PlayerControllerB CheckLineOfSightForClosestPlayer(float width = 45f, int range = 60, int proximityAwareness = -1, float bufferDistance = 0f)
 	{
 		return null;
 	}
@@ -362,7 +366,7 @@ public abstract class EnemyAI : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CCurrentSearchCoroutine_003Ed__84))]
+	[IteratorStateMachine(typeof(_003CCurrentSearchCoroutine_003Ed__86))]
 	private IEnumerator CurrentSearchCoroutine()
 	{
 		return null;
@@ -372,7 +376,7 @@ public abstract class EnemyAI : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CChooseNextNodeInSearchRoutine_003Ed__86))]
+	[IteratorStateMachine(typeof(_003CChooseNextNodeInSearchRoutine_003Ed__88))]
 	private IEnumerator ChooseNextNodeInSearchRoutine()
 	{
 		return null;
@@ -538,11 +542,19 @@ public abstract class EnemyAI : NetworkBehaviour
 	{
 	}
 
+	public void LogEnemyError(string error)
+	{
+	}
+
 	public virtual void AnimationEventA()
 	{
 	}
 
 	public virtual void AnimationEventB()
+	{
+	}
+
+	public virtual void ShipTeleportEnemy()
 	{
 	}
 }
