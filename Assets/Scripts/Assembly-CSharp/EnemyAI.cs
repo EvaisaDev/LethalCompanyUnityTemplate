@@ -11,7 +11,7 @@ using UnityEngine.AI;
 public abstract class EnemyAI : NetworkBehaviour
 {
 	[CompilerGenerated]
-	private sealed class _003CChooseNextNodeInSearchRoutine_003Ed__88 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CChooseNextNodeInSearchRoutine_003Ed__90 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -46,7 +46,7 @@ public abstract class EnemyAI : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CChooseNextNodeInSearchRoutine_003Ed__88(int _003C_003E1__state)
+		public _003CChooseNextNodeInSearchRoutine_003Ed__90(int _003C_003E1__state)
 		{
 		}
 
@@ -73,7 +73,7 @@ public abstract class EnemyAI : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CCurrentSearchCoroutine_003Ed__86 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CCurrentSearchCoroutine_003Ed__88 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -104,7 +104,7 @@ public abstract class EnemyAI : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CCurrentSearchCoroutine_003Ed__86(int _003C_003E1__state)
+		public _003CCurrentSearchCoroutine_003Ed__88(int _003C_003E1__state)
 		{
 		}
 
@@ -269,6 +269,8 @@ public abstract class EnemyAI : NetworkBehaviour
 
 	public bool isOutside;
 
+	private System.Random searchRoutineRandom;
+
 	public virtual void SetEnemyStunned(bool setToStunned, float setToStunTime = 1f, PlayerControllerB setStunnedByPlayer = null)
 	{
 	}
@@ -362,11 +364,16 @@ public abstract class EnemyAI : NetworkBehaviour
 	{
 	}
 
+	private int RoundUpToNearestFive(float x)
+	{
+		return 0;
+	}
+
 	public void StopSearch(AISearchRoutine search, bool clear = true)
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CCurrentSearchCoroutine_003Ed__86))]
+	[IteratorStateMachine(typeof(_003CCurrentSearchCoroutine_003Ed__88))]
 	private IEnumerator CurrentSearchCoroutine()
 	{
 		return null;
@@ -376,7 +383,7 @@ public abstract class EnemyAI : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CChooseNextNodeInSearchRoutine_003Ed__88))]
+	[IteratorStateMachine(typeof(_003CChooseNextNodeInSearchRoutine_003Ed__90))]
 	private IEnumerator ChooseNextNodeInSearchRoutine()
 	{
 		return null;

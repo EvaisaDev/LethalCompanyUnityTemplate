@@ -30,6 +30,10 @@ public class UnlockableSuit : NetworkBehaviour
 	{
 	}
 
+	public static void SwitchSuitForAllPlayers(int suitID, bool playAudio = false)
+	{
+	}
+
 	public static void SwitchSuitForPlayer(PlayerControllerB player, int suitID, bool playAudio = true)
 	{
 	}

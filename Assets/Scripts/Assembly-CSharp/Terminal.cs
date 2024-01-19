@@ -13,7 +13,7 @@ using UnityEngine.Video;
 public class Terminal : NetworkBehaviour
 {
 	[CompilerGenerated]
-	private sealed class _003C_003Ec__DisplayClass90_0
+	private sealed class _003C_003Ec__DisplayClass91_0
 	{
 		public QuickMenuManager quickMenu;
 
@@ -24,13 +24,13 @@ public class Terminal : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CdisplayReimbursedTipDelay_003Ed__90 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CdisplayReimbursedTipDelay_003Ed__91 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
 		private object _003C_003E2__current;
 
-		private _003C_003Ec__DisplayClass90_0 _003C_003E8__1;
+		private _003C_003Ec__DisplayClass91_0 _003C_003E8__1;
 
 		object IEnumerator<object>.Current
 		{
@@ -51,7 +51,7 @@ public class Terminal : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CdisplayReimbursedTipDelay_003Ed__90(int _003C_003E1__state)
+		public _003CdisplayReimbursedTipDelay_003Ed__91(int _003C_003E1__state)
 		{
 		}
 
@@ -78,63 +78,7 @@ public class Terminal : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CforceScrollbarDown_003Ed__60 : IEnumerator<object>, IEnumerator, IDisposable
-	{
-		private int _003C_003E1__state;
-
-		private object _003C_003E2__current;
-
-		public Terminal _003C_003E4__this;
-
-		private int _003Ci_003E5__2;
-
-		object IEnumerator<object>.Current
-		{
-			[DebuggerHidden]
-			get
-			{
-				return null;
-			}
-		}
-
-		object IEnumerator.Current
-		{
-			[DebuggerHidden]
-			get
-			{
-				return null;
-			}
-		}
-
-		[DebuggerHidden]
-		public _003CforceScrollbarDown_003Ed__60(int _003C_003E1__state)
-		{
-		}
-
-		[DebuggerHidden]
-		void IDisposable.Dispose()
-		{
-		}
-
-		private bool MoveNext()
-		{
-			return false;
-		}
-
-		bool IEnumerator.MoveNext()
-		{
-			//ILSpy generated this explicit interface implementation from .override directive in MoveNext
-			return this.MoveNext();
-		}
-
-		[DebuggerHidden]
-		void IEnumerator.Reset()
-		{
-		}
-	}
-
-	[CompilerGenerated]
-	private sealed class _003CforceScrollbarUp_003Ed__61 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CforceScrollbarDown_003Ed__61 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -163,7 +107,7 @@ public class Terminal : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CforceScrollbarUp_003Ed__61(int _003C_003E1__state)
+		public _003CforceScrollbarDown_003Ed__61(int _003C_003E1__state)
 		{
 		}
 
@@ -190,7 +134,63 @@ public class Terminal : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CloadImageSlowly_003Ed__69 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CforceScrollbarUp_003Ed__62 : IEnumerator<object>, IEnumerator, IDisposable
+	{
+		private int _003C_003E1__state;
+
+		private object _003C_003E2__current;
+
+		public Terminal _003C_003E4__this;
+
+		private int _003Ci_003E5__2;
+
+		object IEnumerator<object>.Current
+		{
+			[DebuggerHidden]
+			get
+			{
+				return null;
+			}
+		}
+
+		object IEnumerator.Current
+		{
+			[DebuggerHidden]
+			get
+			{
+				return null;
+			}
+		}
+
+		[DebuggerHidden]
+		public _003CforceScrollbarUp_003Ed__62(int _003C_003E1__state)
+		{
+		}
+
+		[DebuggerHidden]
+		void IDisposable.Dispose()
+		{
+		}
+
+		private bool MoveNext()
+		{
+			return false;
+		}
+
+		bool IEnumerator.MoveNext()
+		{
+			//ILSpy generated this explicit interface implementation from .override directive in MoveNext
+			return this.MoveNext();
+		}
+
+		[DebuggerHidden]
+		void IEnumerator.Reset()
+		{
+		}
+	}
+
+	[CompilerGenerated]
+	private sealed class _003CloadImageSlowly_003Ed__70 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -219,7 +219,7 @@ public class Terminal : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CloadImageSlowly_003Ed__69(int _003C_003E1__state)
+		public _003CloadImageSlowly_003Ed__70(int _003C_003E1__state)
 		{
 		}
 
@@ -246,7 +246,7 @@ public class Terminal : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CloadTextAnimation_003Ed__65 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CloadTextAnimation_003Ed__66 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -275,7 +275,7 @@ public class Terminal : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CloadTextAnimation_003Ed__65(int _003C_003E1__state)
+		public _003CloadTextAnimation_003Ed__66(int _003C_003E1__state)
 		{
 		}
 
@@ -302,7 +302,7 @@ public class Terminal : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CselectTextFieldDelayed_003Ed__95 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CselectTextFieldDelayed_003Ed__96 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -329,7 +329,7 @@ public class Terminal : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CselectTextFieldDelayed_003Ed__95(int _003C_003E1__state)
+		public _003CselectTextFieldDelayed_003Ed__96(int _003C_003E1__state)
 		{
 		}
 
@@ -356,7 +356,7 @@ public class Terminal : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CwaitUntilFrameEndToSetActive_003Ed__89 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CwaitUntilFrameEndToSetActive_003Ed__90 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -385,7 +385,7 @@ public class Terminal : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CwaitUntilFrameEndToSetActive_003Ed__89(int _003C_003E1__state)
+		public _003CwaitUntilFrameEndToSetActive_003Ed__90(int _003C_003E1__state)
 		{
 		}
 
@@ -537,17 +537,19 @@ public class Terminal : NetworkBehaviour
 
 	public Texture displayingPersistentImage;
 
+	public int startingCreditsAmount;
+
 	private void Update()
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CforceScrollbarDown_003Ed__60))]
+	[IteratorStateMachine(typeof(_003CforceScrollbarDown_003Ed__61))]
 	private IEnumerator forceScrollbarDown()
 	{
 		return null;
 	}
 
-	[IteratorStateMachine(typeof(_003CforceScrollbarUp_003Ed__61))]
+	[IteratorStateMachine(typeof(_003CforceScrollbarUp_003Ed__62))]
 	private IEnumerator forceScrollbarUp()
 	{
 		return null;
@@ -567,7 +569,7 @@ public class Terminal : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CloadTextAnimation_003Ed__65))]
+	[IteratorStateMachine(typeof(_003CloadTextAnimation_003Ed__66))]
 	private IEnumerator loadTextAnimation()
 	{
 		return null;
@@ -586,7 +588,7 @@ public class Terminal : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CloadImageSlowly_003Ed__69))]
+	[IteratorStateMachine(typeof(_003CloadImageSlowly_003Ed__70))]
 	private IEnumerator loadImageSlowly()
 	{
 		return null;
@@ -617,7 +619,7 @@ public class Terminal : NetworkBehaviour
 	{
 	}
 
-	[ServerRpc(RequireOwnership = false)]
+	[ServerRpc]
 	public void SyncGroupCreditsServerRpc(int newGroupCredits, int numItemsInShip)
 	{
 	}
@@ -677,13 +679,13 @@ public class Terminal : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CwaitUntilFrameEndToSetActive_003Ed__89))]
+	[IteratorStateMachine(typeof(_003CwaitUntilFrameEndToSetActive_003Ed__90))]
 	private IEnumerator waitUntilFrameEndToSetActive(bool active)
 	{
 		return null;
 	}
 
-	[IteratorStateMachine(typeof(_003CdisplayReimbursedTipDelay_003Ed__90))]
+	[IteratorStateMachine(typeof(_003CdisplayReimbursedTipDelay_003Ed__91))]
 	private IEnumerator displayReimbursedTipDelay()
 	{
 		return null;
@@ -707,7 +709,7 @@ public class Terminal : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CselectTextFieldDelayed_003Ed__95))]
+	[IteratorStateMachine(typeof(_003CselectTextFieldDelayed_003Ed__96))]
 	private IEnumerator selectTextFieldDelayed()
 	{
 		return null;

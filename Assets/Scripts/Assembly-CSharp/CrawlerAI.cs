@@ -10,7 +10,7 @@ using UnityEngine;
 public class CrawlerAI : EnemyAI
 {
 	[CompilerGenerated]
-	private sealed class _003CEatPlayerBodyAnimation_003Ed__43 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CEatPlayerBodyAnimation_003Ed__50 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -41,7 +41,7 @@ public class CrawlerAI : EnemyAI
 		}
 
 		[DebuggerHidden]
-		public _003CEatPlayerBodyAnimation_003Ed__43(int _003C_003E1__state)
+		public _003CEatPlayerBodyAnimation_003Ed__50(int _003C_003E1__state)
 		{
 		}
 
@@ -94,6 +94,12 @@ public class CrawlerAI : EnemyAI
 
 	private float previousVelocity;
 
+	private float averageVelocity;
+
+	private float velocityInterval;
+
+	private float velocityAverageCount;
+
 	private float wallCollisionSFXDebounce;
 
 	private float timeSinceHittingPlayer;
@@ -117,6 +123,15 @@ public class CrawlerAI : EnemyAI
 	private float agentSpeedWithNegative;
 
 	private Vector3 lastPositionOfSeenPlayer;
+
+	[Space(5f)]
+	public float BaseAcceleration;
+
+	public float SpeedAccelerationEffect;
+
+	public float SpeedIncreaseRate;
+
+	private float lastTimeHit;
 
 	public override void Start()
 	{
@@ -200,7 +215,7 @@ public class CrawlerAI : EnemyAI
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CEatPlayerBodyAnimation_003Ed__43))]
+	[IteratorStateMachine(typeof(_003CEatPlayerBodyAnimation_003Ed__50))]
 	private IEnumerator EatPlayerBodyAnimation(int playerId)
 	{
 		return null;

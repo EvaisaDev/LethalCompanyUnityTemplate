@@ -5,8 +5,6 @@ public class KepRemapPanel : MonoBehaviour
 {
 	public List<RemappableKey> remappableKeys;
 
-	private bool hasLoadedKeyRemappingSlots;
-
 	public List<GameObject> keySlots;
 
 	public GameObject keyRemapSlotPrefab;
@@ -25,11 +23,19 @@ public class KepRemapPanel : MonoBehaviour
 
 	public GameObject sectionTextPrefab;
 
-	private void LoadRemappedKeys()
+	public void ResetKeybindsUI()
 	{
 	}
 
 	private void OnDisable()
+	{
+	}
+
+	public void UnloadKeybindsUI()
+	{
+	}
+
+	public void LoadKeybindsUI()
 	{
 	}
 

@@ -9,6 +9,8 @@ public class EnemyType : ScriptableObject
 	[Tooltip("Determines how likely an enemy is to spawn throughout the day.")]
 	public AnimationCurve probabilityCurve;
 
+	public bool spawningDisabled;
+
 	[Tooltip("X axis is the number of this enemy type that have spawned, divided by 10; Y axis is a multiplier to probabilityCurve.")]
 	public AnimationCurve numberSpawnedFalloff;
 

@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using GameNetcodeStuff;
+using Steamworks;
 using Steamworks.Data;
 using TMPro;
 using Unity.Netcode;
@@ -16,7 +17,7 @@ using UnityEngine.UI;
 public class HUDManager : NetworkBehaviour
 {
 	[CompilerGenerated]
-	private sealed class _003CDisplaySignalTranslatorMessage_003Ed__252 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CDisplaySignalTranslatorMessage_003Ed__254 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -53,7 +54,7 @@ public class HUDManager : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CDisplaySignalTranslatorMessage_003Ed__252(int _003C_003E1__state)
+		public _003CDisplaySignalTranslatorMessage_003Ed__254(int _003C_003E1__state)
 		{
 		}
 
@@ -80,7 +81,7 @@ public class HUDManager : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CFadeUIElement_003Ed__239 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CFadeUIElement_003Ed__241 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -111,7 +112,7 @@ public class HUDManager : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CFadeUIElement_003Ed__239(int _003C_003E1__state)
+		public _003CFadeUIElement_003Ed__241(int _003C_003E1__state)
 		{
 		}
 
@@ -139,13 +140,15 @@ public class HUDManager : NetworkBehaviour
 
 	[StructLayout(LayoutKind.Auto)]
 	[CompilerGenerated]
-	private struct _003CFillSpectateBoxImageWithSteamProfile_003Ed__214 : IAsyncStateMachine
+	private struct _003CFillImageWithSteamProfile_003Ed__216 : IAsyncStateMachine
 	{
 		public int _003C_003E1__state;
 
 		public AsyncVoidMethodBuilder _003C_003Et__builder;
 
-		public PlayerControllerB player;
+		public bool large;
+
+		public SteamId steamId;
 
 		public RawImage image;
 
@@ -174,7 +177,7 @@ public class HUDManager : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CForceChangeText_003Ed__271 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CForceChangeText_003Ed__275 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -205,7 +208,7 @@ public class HUDManager : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CForceChangeText_003Ed__271(int _003C_003E1__state)
+		public _003CForceChangeText_003Ed__275(int _003C_003E1__state)
 		{
 		}
 
@@ -231,8 +234,48 @@ public class HUDManager : NetworkBehaviour
 		}
 	}
 
+	[StructLayout(LayoutKind.Auto)]
 	[CompilerGenerated]
-	private sealed class _003CReadOutDialogue_003Ed__242 : IEnumerator<object>, IEnumerator, IDisposable
+	private struct _003CGetRankAndSubmitScore_003Ed__257 : IAsyncStateMachine
+	{
+		public int _003C_003E1__state;
+
+		public AsyncVoidMethodBuilder _003C_003Et__builder;
+
+		public HUDManager _003C_003E4__this;
+
+		public int scrapCollected;
+
+		private int _003CweekNum_003E5__2;
+
+		private TaskAwaiter<Leaderboard?> _003C_003Eu__1;
+
+		private TaskAwaiter<LeaderboardUpdate?> _003C_003Eu__2;
+
+		private void MoveNext()
+		{
+		}
+
+		void IAsyncStateMachine.MoveNext()
+		{
+			//ILSpy generated this explicit interface implementation from .override directive in MoveNext
+			this.MoveNext();
+		}
+
+		[DebuggerHidden]
+		private void SetStateMachine(IAsyncStateMachine stateMachine)
+		{
+		}
+
+		void IAsyncStateMachine.SetStateMachine(IAsyncStateMachine stateMachine)
+		{
+			//ILSpy generated this explicit interface implementation from .override directive in SetStateMachine
+			this.SetStateMachine(stateMachine);
+		}
+	}
+
+	[CompilerGenerated]
+	private sealed class _003CReadOutDialogue_003Ed__244 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -263,7 +306,7 @@ public class HUDManager : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CReadOutDialogue_003Ed__242(int _003C_003E1__state)
+		public _003CReadOutDialogue_003Ed__244(int _003C_003E1__state)
 		{
 		}
 
@@ -290,7 +333,7 @@ public class HUDManager : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CSetPlayerLevelSmoothly_003Ed__263 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CSetPlayerLevelSmoothly_003Ed__267 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -329,7 +372,7 @@ public class HUDManager : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CSetPlayerLevelSmoothly_003Ed__263(int _003C_003E1__state)
+		public _003CSetPlayerLevelSmoothly_003Ed__267(int _003C_003E1__state)
 		{
 		}
 
@@ -356,7 +399,7 @@ public class HUDManager : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CTipsPanelTimer_003Ed__281 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CTipsPanelTimer_003Ed__285 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -383,7 +426,7 @@ public class HUDManager : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CTipsPanelTimer_003Ed__281(int _003C_003E1__state)
+		public _003CTipsPanelTimer_003Ed__285(int _003C_003E1__state)
 		{
 		}
 
@@ -410,7 +453,7 @@ public class HUDManager : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CdisplayScrapTimer_003Ed__269 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CdisplayScrapTimer_003Ed__273 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -439,7 +482,7 @@ public class HUDManager : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CdisplayScrapTimer_003Ed__269(int _003C_003E1__state)
+		public _003CdisplayScrapTimer_003Ed__273(int _003C_003E1__state)
 		{
 		}
 
@@ -466,7 +509,7 @@ public class HUDManager : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CdisplayTipTextTimer_003Ed__279 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CdisplayTipTextTimer_003Ed__283 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -493,7 +536,7 @@ public class HUDManager : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CdisplayTipTextTimer_003Ed__279(int _003C_003E1__state)
+		public _003CdisplayTipTextTimer_003Ed__283(int _003C_003E1__state)
 		{
 		}
 
@@ -520,7 +563,7 @@ public class HUDManager : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CplayScrapDisplaySFX_003Ed__268 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CplayScrapDisplaySFX_003Ed__272 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -547,7 +590,7 @@ public class HUDManager : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CplayScrapDisplaySFX_003Ed__268(int _003C_003E1__state)
+		public _003CplayScrapDisplaySFX_003Ed__272(int _003C_003E1__state)
 		{
 		}
 
@@ -574,7 +617,7 @@ public class HUDManager : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CrackUpNewQuotaText_003Ed__246 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CrackUpNewQuotaText_003Ed__248 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -603,7 +646,7 @@ public class HUDManager : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CrackUpNewQuotaText_003Ed__246(int _003C_003E1__state)
+		public _003CrackUpNewQuotaText_003Ed__248(int _003C_003E1__state)
 		{
 		}
 
@@ -630,7 +673,7 @@ public class HUDManager : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CscrollRewardsListText_003Ed__244 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CscrollRewardsListText_003Ed__246 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -657,7 +700,7 @@ public class HUDManager : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CscrollRewardsListText_003Ed__244(int _003C_003E1__state)
+		public _003CscrollRewardsListText_003Ed__246(int _003C_003E1__state)
 		{
 		}
 
@@ -684,7 +727,7 @@ public class HUDManager : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CwaitUntilLocalPlayerControllerInitialized_003Ed__199 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CwaitUntilLocalPlayerControllerInitialized_003Ed__201 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -711,7 +754,7 @@ public class HUDManager : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CwaitUntilLocalPlayerControllerInitialized_003Ed__199(int _003C_003E1__state)
+		public _003CwaitUntilLocalPlayerControllerInitialized_003Ed__201(int _003C_003E1__state)
 		{
 		}
 
@@ -906,6 +949,8 @@ public class HUDManager : NetworkBehaviour
 	private Terminal terminalScript;
 
 	[Header("Special Graphics")]
+	public bool retrievingSteamLeaderboard;
+
 	public Animator signalTranslatorAnimator;
 
 	public TextMeshProUGUI signalTranslatorText;
@@ -1053,6 +1098,8 @@ public class HUDManager : NetworkBehaviour
 
 	public Volume flashbangScreenFilter;
 
+	public float flashFilter;
+
 	public Volume underwaterScreenFilter;
 
 	public bool setUnderwaterFilter;
@@ -1175,7 +1222,7 @@ public class HUDManager : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CwaitUntilLocalPlayerControllerInitialized_003Ed__199))]
+	[IteratorStateMachine(typeof(_003CwaitUntilLocalPlayerControllerInitialized_003Ed__201))]
 	private IEnumerator waitUntilLocalPlayerControllerInitialized()
 	{
 		return null;
@@ -1242,8 +1289,8 @@ public class HUDManager : NetworkBehaviour
 	{
 	}
 
-	[AsyncStateMachine(typeof(_003CFillSpectateBoxImageWithSteamProfile_003Ed__214))]
-	private void FillSpectateBoxImageWithSteamProfile(RawImage image, PlayerControllerB player)
+	[AsyncStateMachine(typeof(_003CFillImageWithSteamProfile_003Ed__216))]
+	public static void FillImageWithSteamProfile(RawImage image, SteamId steamId, bool large = true)
 	{
 	}
 
@@ -1350,7 +1397,7 @@ public class HUDManager : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CFadeUIElement_003Ed__239))]
+	[IteratorStateMachine(typeof(_003CFadeUIElement_003Ed__241))]
 	private IEnumerator FadeUIElement(HUDElement element, float delay, float endAlpha)
 	{
 		return null;
@@ -1364,7 +1411,7 @@ public class HUDManager : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CReadOutDialogue_003Ed__242))]
+	[IteratorStateMachine(typeof(_003CReadOutDialogue_003Ed__244))]
 	private IEnumerator ReadOutDialogue(DialogueSegment[] dialogueArray)
 	{
 		return null;
@@ -1374,7 +1421,7 @@ public class HUDManager : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CscrollRewardsListText_003Ed__244))]
+	[IteratorStateMachine(typeof(_003CscrollRewardsListText_003Ed__246))]
 	private IEnumerator scrollRewardsListText()
 	{
 		return null;
@@ -1384,7 +1431,7 @@ public class HUDManager : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CrackUpNewQuotaText_003Ed__246))]
+	[IteratorStateMachine(typeof(_003CrackUpNewQuotaText_003Ed__248))]
 	private IEnumerator rackUpNewQuotaText()
 	{
 		return null;
@@ -1412,7 +1459,7 @@ public class HUDManager : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CDisplaySignalTranslatorMessage_003Ed__252))]
+	[IteratorStateMachine(typeof(_003CDisplaySignalTranslatorMessage_003Ed__254))]
 	private IEnumerator DisplaySignalTranslatorMessage(string signalMessage, int seed, SignalTranslator signalTranslator)
 	{
 		return null;
@@ -1422,7 +1469,16 @@ public class HUDManager : NetworkBehaviour
 	{
 	}
 
-	public void FillEndGameStats(EndOfGameStats stats)
+	public void FillChallengeResultsStats(int scrapCollected)
+	{
+	}
+
+	[AsyncStateMachine(typeof(_003CGetRankAndSubmitScore_003Ed__257))]
+	public void GetRankAndSubmitScore(int scrapCollected)
+	{
+	}
+
+	public void FillEndGameStats(EndOfGameStats stats, int scrapCollected = 0)
 	{
 	}
 
@@ -1464,7 +1520,7 @@ public class HUDManager : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CSetPlayerLevelSmoothly_003Ed__263))]
+	[IteratorStateMachine(typeof(_003CSetPlayerLevelSmoothly_003Ed__267))]
 	private IEnumerator SetPlayerLevelSmoothly(int XPGain)
 	{
 		return null;
@@ -1486,13 +1542,13 @@ public class HUDManager : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CplayScrapDisplaySFX_003Ed__268))]
+	[IteratorStateMachine(typeof(_003CplayScrapDisplaySFX_003Ed__272))]
 	private IEnumerator playScrapDisplaySFX()
 	{
 		return null;
 	}
 
-	[IteratorStateMachine(typeof(_003CdisplayScrapTimer_003Ed__269))]
+	[IteratorStateMachine(typeof(_003CdisplayScrapTimer_003Ed__273))]
 	private IEnumerator displayScrapTimer(GameObject displayingObject)
 	{
 		return null;
@@ -1502,7 +1558,7 @@ public class HUDManager : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CForceChangeText_003Ed__271))]
+	[IteratorStateMachine(typeof(_003CForceChangeText_003Ed__275))]
 	private IEnumerator ForceChangeText(TextMeshProUGUI textToChange, string changeTextTo)
 	{
 		return null;
@@ -1536,7 +1592,7 @@ public class HUDManager : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CdisplayTipTextTimer_003Ed__279))]
+	[IteratorStateMachine(typeof(_003CdisplayTipTextTimer_003Ed__283))]
 	private IEnumerator displayTipTextTimer()
 	{
 		return null;
@@ -1547,7 +1603,7 @@ public class HUDManager : NetworkBehaviour
 		return false;
 	}
 
-	[IteratorStateMachine(typeof(_003CTipsPanelTimer_003Ed__281))]
+	[IteratorStateMachine(typeof(_003CTipsPanelTimer_003Ed__285))]
 	private IEnumerator TipsPanelTimer(string prefsKey)
 	{
 		return null;

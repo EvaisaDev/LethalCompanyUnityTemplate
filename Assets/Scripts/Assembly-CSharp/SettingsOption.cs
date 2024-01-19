@@ -24,11 +24,21 @@ public class SettingsOption : MonoBehaviour
 
 	public bool gamepadOnlyRebinding;
 
+	public bool requireButtonType;
+
 	public GameObject waitingForInput;
 
 	public TextMeshProUGUI currentlyUsedKeyText;
 
 	public void CancelRebinds()
+	{
+	}
+
+	public void SetBindingToCurrentSetting()
+	{
+	}
+
+	public void ResetBindingsToDefaultButton()
 	{
 	}
 

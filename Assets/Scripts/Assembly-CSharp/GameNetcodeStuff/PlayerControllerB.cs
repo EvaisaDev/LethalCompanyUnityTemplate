@@ -16,7 +16,7 @@ namespace GameNetcodeStuff
 	public class PlayerControllerB : NetworkBehaviour, IHittable, IShockableWithGun, IVisibleThreat
 	{
 		[CompilerGenerated]
-		private sealed class _003C_003Ec__DisplayClass297_0
+		private sealed class _003C_003Ec__DisplayClass298_0
 		{
 			public QuickMenuManager quickMenu;
 
@@ -27,7 +27,7 @@ namespace GameNetcodeStuff
 		}
 
 		[CompilerGenerated]
-		private sealed class _003CGrabObject_003Ed__349 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CGrabObject_003Ed__350 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -54,7 +54,7 @@ namespace GameNetcodeStuff
 			}
 
 			[DebuggerHidden]
-			public _003CGrabObject_003Ed__349(int _003C_003E1__state)
+			public _003CGrabObject_003Ed__350(int _003C_003E1__state)
 			{
 			}
 
@@ -81,13 +81,13 @@ namespace GameNetcodeStuff
 		}
 
 		[CompilerGenerated]
-		private sealed class _003CPlayIntroTip_003Ed__297 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CPlayIntroTip_003Ed__298 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
 			private object _003C_003E2__current;
 
-			private _003C_003Ec__DisplayClass297_0 _003C_003E8__1;
+			private _003C_003Ec__DisplayClass298_0 _003C_003E8__1;
 
 			object IEnumerator<object>.Current
 			{
@@ -108,7 +108,7 @@ namespace GameNetcodeStuff
 			}
 
 			[DebuggerHidden]
-			public _003CPlayIntroTip_003Ed__297(int _003C_003E1__state)
+			public _003CPlayIntroTip_003Ed__298(int _003C_003E1__state)
 			{
 			}
 
@@ -135,7 +135,7 @@ namespace GameNetcodeStuff
 		}
 
 		[CompilerGenerated]
-		private sealed class _003CPlayerJump_003Ed__373 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CPlayerJump_003Ed__374 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -162,7 +162,7 @@ namespace GameNetcodeStuff
 			}
 
 			[DebuggerHidden]
-			public _003CPlayerJump_003Ed__373(int _003C_003E1__state)
+			public _003CPlayerJump_003Ed__374(int _003C_003E1__state)
 			{
 			}
 
@@ -189,7 +189,7 @@ namespace GameNetcodeStuff
 		}
 
 		[CompilerGenerated]
-		private sealed class _003CWaitUntilPlayerHasLeftBodyToTeleport_003Ed__454 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CWaitUntilPlayerHasLeftBodyToTeleport_003Ed__458 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -218,7 +218,7 @@ namespace GameNetcodeStuff
 			}
 
 			[DebuggerHidden]
-			public _003CWaitUntilPlayerHasLeftBodyToTeleport_003Ed__454(int _003C_003E1__state)
+			public _003CWaitUntilPlayerHasLeftBodyToTeleport_003Ed__458(int _003C_003E1__state)
 			{
 			}
 
@@ -245,7 +245,7 @@ namespace GameNetcodeStuff
 		}
 
 		[CompilerGenerated]
-		private sealed class _003CplayQuickSpecialAnimation_003Ed__313 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CplayQuickSpecialAnimation_003Ed__314 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -274,7 +274,7 @@ namespace GameNetcodeStuff
 			}
 
 			[DebuggerHidden]
-			public _003CplayQuickSpecialAnimation_003Ed__313(int _003C_003E1__state)
+			public _003CplayQuickSpecialAnimation_003Ed__314(int _003C_003E1__state)
 			{
 			}
 
@@ -301,7 +301,7 @@ namespace GameNetcodeStuff
 		}
 
 		[CompilerGenerated]
-		private sealed class _003CspawnPlayerAnimTimer_003Ed__413 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CspawnPlayerAnimTimer_003Ed__414 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -328,7 +328,7 @@ namespace GameNetcodeStuff
 			}
 
 			[DebuggerHidden]
-			public _003CspawnPlayerAnimTimer_003Ed__413(int _003C_003E1__state)
+			public _003CspawnPlayerAnimTimer_003Ed__414(int _003C_003E1__state)
 			{
 			}
 
@@ -355,7 +355,7 @@ namespace GameNetcodeStuff
 		}
 
 		[CompilerGenerated]
-		private sealed class _003CtimeSpecialAnimation_003Ed__402 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CtimeSpecialAnimation_003Ed__403 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -384,7 +384,7 @@ namespace GameNetcodeStuff
 			}
 
 			[DebuggerHidden]
-			public _003CtimeSpecialAnimation_003Ed__402(int _003C_003E1__state)
+			public _003CtimeSpecialAnimation_003Ed__403(int _003C_003E1__state)
 			{
 			}
 
@@ -411,7 +411,7 @@ namespace GameNetcodeStuff
 		}
 
 		[CompilerGenerated]
-		private sealed class _003CwaitToEndOfFrameToDiscard_003Ed__354 : IEnumerator<object>, IEnumerator, IDisposable
+		private sealed class _003CwaitToEndOfFrameToDiscard_003Ed__355 : IEnumerator<object>, IEnumerator, IDisposable
 		{
 			private int _003C_003E1__state;
 
@@ -438,7 +438,7 @@ namespace GameNetcodeStuff
 			}
 
 			[DebuggerHidden]
-			public _003CwaitToEndOfFrameToDiscard_003Ed__354(int _003C_003E1__state)
+			public _003CwaitToEndOfFrameToDiscard_003Ed__355(int _003C_003E1__state)
 			{
 			}
 
@@ -663,6 +663,8 @@ namespace GameNetcodeStuff
 		public float minVelocityToTakeDamage;
 
 		public bool isCrouching;
+
+		private float timeSinceCrouching;
 
 		private bool isFallingNoJump;
 
@@ -1104,7 +1106,7 @@ namespace GameNetcodeStuff
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CPlayIntroTip_003Ed__297))]
+		[IteratorStateMachine(typeof(_003CPlayIntroTip_003Ed__298))]
 		private IEnumerator PlayIntroTip()
 		{
 			return null;
@@ -1175,7 +1177,7 @@ namespace GameNetcodeStuff
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CplayQuickSpecialAnimation_003Ed__313))]
+		[IteratorStateMachine(typeof(_003CplayQuickSpecialAnimation_003Ed__314))]
 		private IEnumerator playQuickSpecialAnimation(float animTime)
 		{
 			return null;
@@ -1341,7 +1343,7 @@ namespace GameNetcodeStuff
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CGrabObject_003Ed__349))]
+		[IteratorStateMachine(typeof(_003CGrabObject_003Ed__350))]
 		private IEnumerator GrabObject()
 		{
 			return null;
@@ -1365,7 +1367,7 @@ namespace GameNetcodeStuff
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CwaitToEndOfFrameToDiscard_003Ed__354))]
+		[IteratorStateMachine(typeof(_003CwaitToEndOfFrameToDiscard_003Ed__355))]
 		private IEnumerator waitToEndOfFrameToDiscard()
 		{
 			return null;
@@ -1450,7 +1452,7 @@ namespace GameNetcodeStuff
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CPlayerJump_003Ed__373))]
+		[IteratorStateMachine(typeof(_003CPlayerJump_003Ed__374))]
 		private IEnumerator PlayerJump()
 		{
 			return null;
@@ -1581,7 +1583,7 @@ namespace GameNetcodeStuff
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CtimeSpecialAnimation_003Ed__402))]
+		[IteratorStateMachine(typeof(_003CtimeSpecialAnimation_003Ed__403))]
 		private IEnumerator timeSpecialAnimation(float time)
 		{
 			return null;
@@ -1604,12 +1606,12 @@ namespace GameNetcodeStuff
 		}
 
 		[ServerRpc]
-		private void UpdatePlayerPositionServerRpc(Vector3 newPos, bool inElevator, bool exhausted, bool isPlayerGrounded)
+		private void UpdatePlayerPositionServerRpc(Vector3 newPos, bool inElevator, bool inShipRoom, bool exhausted, bool isPlayerGrounded)
 		{
 		}
 
 		[ClientRpc]
-		private void UpdatePlayerPositionClientRpc(Vector3 newPos, bool inElevator, bool exhausted, bool isPlayerGrounded)
+		private void UpdatePlayerPositionClientRpc(Vector3 newPos, bool inElevator, bool isInShip, bool exhausted, bool isPlayerGrounded)
 		{
 		}
 
@@ -1631,7 +1633,7 @@ namespace GameNetcodeStuff
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CspawnPlayerAnimTimer_003Ed__413))]
+		[IteratorStateMachine(typeof(_003CspawnPlayerAnimTimer_003Ed__414))]
 		private IEnumerator spawnPlayerAnimTimer()
 		{
 			return null;
@@ -1792,6 +1794,20 @@ namespace GameNetcodeStuff
 		{
 		}
 
+		public void DropAllHeldItemsAndSync()
+		{
+		}
+
+		[ServerRpc(RequireOwnership = false)]
+		public void DropAllHeldItemsServerRpc()
+		{
+		}
+
+		[ClientRpc]
+		public void DropAllHeldItemsClientRpc()
+		{
+		}
+
 		private bool NearOtherPlayers(PlayerControllerB playerScript = null, float checkRadius = 10f)
 		{
 			return false;
@@ -1815,7 +1831,7 @@ namespace GameNetcodeStuff
 		{
 		}
 
-		[IteratorStateMachine(typeof(_003CWaitUntilPlayerHasLeftBodyToTeleport_003Ed__454))]
+		[IteratorStateMachine(typeof(_003CWaitUntilPlayerHasLeftBodyToTeleport_003Ed__458))]
 		private IEnumerator WaitUntilPlayerHasLeftBodyToTeleport(Vector3 newBodyPosition)
 		{
 			return null;
@@ -1858,8 +1874,9 @@ namespace GameNetcodeStuff
 		{
 		}
 
-		void IHittable.Hit(int force, Vector3 hitDirection, PlayerControllerB playerWhoHit, bool playHitSFX = false)
+		bool IHittable.Hit(int force, Vector3 hitDirection, PlayerControllerB playerWhoHit, bool playHitSFX = false)
 		{
+			return false;
 		}
 
 		[ServerRpc(RequireOwnership = false)]

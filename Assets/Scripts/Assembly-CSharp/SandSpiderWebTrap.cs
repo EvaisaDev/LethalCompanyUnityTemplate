@@ -23,8 +23,9 @@ public class SandSpiderWebTrap : MonoBehaviour, IHittable
 
 	private bool webHasBeenBroken;
 
-	public void Hit(int force, Vector3 hitDirection, PlayerControllerB playerWhoHit = null, bool playHitSFX = false)
+	public bool Hit(int force, Vector3 hitDirection, PlayerControllerB playerWhoHit = null, bool playHitSFX = false)
 	{
+		return false;
 	}
 
 	private void OnEnable()

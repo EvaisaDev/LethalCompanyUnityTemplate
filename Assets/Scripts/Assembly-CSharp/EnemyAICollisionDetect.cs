@@ -14,8 +14,9 @@ public class EnemyAICollisionDetect : MonoBehaviour, IHittable, INoiseListener, 
 	{
 	}
 
-	void IHittable.Hit(int force, Vector3 hitDirection, PlayerControllerB playerWhoHit, bool playHitSFX)
+	bool IHittable.Hit(int force, Vector3 hitDirection, PlayerControllerB playerWhoHit, bool playHitSFX)
 	{
+		return false;
 	}
 
 	void INoiseListener.DetectNoise(Vector3 noisePosition, float noiseLoudness, int timesNoisePlayedInOneSpot, int noiseID)

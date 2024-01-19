@@ -3,9 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
+using Unity.Netcode;
 using UnityEngine;
 
-public class ItemCharger : MonoBehaviour
+public class ItemCharger : NetworkBehaviour
 {
 	[CompilerGenerated]
 	private sealed class _003CchargeItemDelayed_003Ed__7 : IEnumerator<object>, IEnumerator, IDisposable
@@ -85,5 +86,15 @@ public class ItemCharger : MonoBehaviour
 	private IEnumerator chargeItemDelayed(GrabbableObject itemToCharge)
 	{
 		return null;
+	}
+
+	[ServerRpc(RequireOwnership = false)]
+	public void PlayChargeItemEffectServerRpc(int playerChargingItem)
+	{
+	}
+
+	[ClientRpc]
+	public void PlayChargeItemEffectClientRpc(int playerChargingItem)
+	{
 	}
 }

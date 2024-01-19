@@ -236,7 +236,8 @@ public class Landmine : NetworkBehaviour, IHittable
 		return false;
 	}
 
-	void IHittable.Hit(int force, Vector3 hitDirection, PlayerControllerB playerWhoHit = null, bool playHitSFX = false)
+	bool IHittable.Hit(int force, Vector3 hitDirection, PlayerControllerB playerWhoHit = null, bool playHitSFX = false)
 	{
+		return false;
 	}
 }

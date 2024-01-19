@@ -10,7 +10,7 @@ using UnityEngine;
 public class NutcrackerEnemyAI : EnemyAI
 {
 	[CompilerGenerated]
-	private sealed class _003CAimGun_003Ed__73 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CAimGun_003Ed__76 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -39,7 +39,7 @@ public class NutcrackerEnemyAI : EnemyAI
 		}
 
 		[DebuggerHidden]
-		public _003CAimGun_003Ed__73(int _003C_003E1__state)
+		public _003CAimGun_003Ed__76(int _003C_003E1__state)
 		{
 		}
 
@@ -66,7 +66,7 @@ public class NutcrackerEnemyAI : EnemyAI
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CInspectionTurn_003Ed__61 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CInspectionTurn_003Ed__64 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -99,7 +99,7 @@ public class NutcrackerEnemyAI : EnemyAI
 		}
 
 		[DebuggerHidden]
-		public _003CInspectionTurn_003Ed__61(int _003C_003E1__state)
+		public _003CInspectionTurn_003Ed__64(int _003C_003E1__state)
 		{
 		}
 
@@ -126,7 +126,7 @@ public class NutcrackerEnemyAI : EnemyAI
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CReloadGun_003Ed__69 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CReloadGun_003Ed__72 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -153,7 +153,7 @@ public class NutcrackerEnemyAI : EnemyAI
 		}
 
 		[DebuggerHidden]
-		public _003CReloadGun_003Ed__69(int _003C_003E1__state)
+		public _003CReloadGun_003Ed__72(int _003C_003E1__state)
 		{
 		}
 
@@ -180,7 +180,7 @@ public class NutcrackerEnemyAI : EnemyAI
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CspawnShotgunShellsOnDelay_003Ed__90 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CspawnShotgunShellsOnDelay_003Ed__93 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -207,7 +207,7 @@ public class NutcrackerEnemyAI : EnemyAI
 		}
 
 		[DebuggerHidden]
-		public _003CspawnShotgunShellsOnDelay_003Ed__90(int _003C_003E1__state)
+		public _003CspawnShotgunShellsOnDelay_003Ed__93(int _003C_003E1__state)
 		{
 		}
 
@@ -234,7 +234,7 @@ public class NutcrackerEnemyAI : EnemyAI
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CwaitToFireGun_003Ed__76 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CwaitToFireGun_003Ed__79 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -261,7 +261,7 @@ public class NutcrackerEnemyAI : EnemyAI
 		}
 
 		[DebuggerHidden]
-		public _003CwaitToFireGun_003Ed__76(int _003C_003E1__state)
+		public _003CwaitToFireGun_003Ed__79(int _003C_003E1__state)
 		{
 		}
 
@@ -379,6 +379,12 @@ public class NutcrackerEnemyAI : EnemyAI
 
 	private int setShotgunScrapValue;
 
+	private int timesSeeingSamePlayer;
+
+	private int previousPlayerSeenWhenAiming;
+
+	private float speedWhileAiming;
+
 	public override void Start()
 	{
 	}
@@ -446,7 +452,7 @@ public class NutcrackerEnemyAI : EnemyAI
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CInspectionTurn_003Ed__61))]
+	[IteratorStateMachine(typeof(_003CInspectionTurn_003Ed__64))]
 	private IEnumerator InspectionTurn()
 	{
 		return null;
@@ -484,7 +490,7 @@ public class NutcrackerEnemyAI : EnemyAI
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CReloadGun_003Ed__69))]
+	[IteratorStateMachine(typeof(_003CReloadGun_003Ed__72))]
 	private IEnumerator ReloadGun()
 	{
 		return null;
@@ -504,7 +510,7 @@ public class NutcrackerEnemyAI : EnemyAI
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CAimGun_003Ed__73))]
+	[IteratorStateMachine(typeof(_003CAimGun_003Ed__76))]
 	private IEnumerator AimGun(Vector3 enemyPos)
 	{
 		return null;
@@ -520,7 +526,7 @@ public class NutcrackerEnemyAI : EnemyAI
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CwaitToFireGun_003Ed__76))]
+	[IteratorStateMachine(typeof(_003CwaitToFireGun_003Ed__79))]
 	private IEnumerator waitToFireGun()
 	{
 		return null;
@@ -584,7 +590,7 @@ public class NutcrackerEnemyAI : EnemyAI
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CspawnShotgunShellsOnDelay_003Ed__90))]
+	[IteratorStateMachine(typeof(_003CspawnShotgunShellsOnDelay_003Ed__93))]
 	private IEnumerator spawnShotgunShellsOnDelay()
 	{
 		return null;

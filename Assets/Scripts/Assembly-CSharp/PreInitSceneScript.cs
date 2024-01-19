@@ -10,7 +10,7 @@ using UnityEngine.UI;
 public class PreInitSceneScript : MonoBehaviour
 {
 	[CompilerGenerated]
-	private sealed class _003CloadSceneDelayed_003Ed__21 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CloadSceneDelayed_003Ed__22 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -37,7 +37,7 @@ public class PreInitSceneScript : MonoBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CloadSceneDelayed_003Ed__21(int _003C_003E1__state)
+		public _003CloadSceneDelayed_003Ed__22(int _003C_003E1__state)
 		{
 		}
 
@@ -64,7 +64,7 @@ public class PreInitSceneScript : MonoBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CrestartGameDueToCorruptedFile_003Ed__25 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CrestartGameDueToCorruptedFile_003Ed__27 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -91,7 +91,7 @@ public class PreInitSceneScript : MonoBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CrestartGameDueToCorruptedFile_003Ed__25(int _003C_003E1__state)
+		public _003CrestartGameDueToCorruptedFile_003Ed__27(int _003C_003E1__state)
 		{
 		}
 
@@ -150,6 +150,8 @@ public class PreInitSceneScript : MonoBehaviour
 
 	public GameObject restartingGameText;
 
+	public GameObject launchSettingsPanelsContainer;
+
 	private void Awake()
 	{
 	}
@@ -170,10 +172,14 @@ public class PreInitSceneScript : MonoBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CloadSceneDelayed_003Ed__21))]
+	[IteratorStateMachine(typeof(_003CloadSceneDelayed_003Ed__22))]
 	private IEnumerator loadSceneDelayed(bool online)
 	{
 		return null;
+	}
+
+	public void SetLaunchPanelsEnabled()
+	{
 	}
 
 	public void SkipToFinalSetting()
@@ -188,7 +194,7 @@ public class PreInitSceneScript : MonoBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CrestartGameDueToCorruptedFile_003Ed__25))]
+	[IteratorStateMachine(typeof(_003CrestartGameDueToCorruptedFile_003Ed__27))]
 	private IEnumerator restartGameDueToCorruptedFile()
 	{
 		return null;

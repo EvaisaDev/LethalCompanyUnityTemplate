@@ -40,5 +40,7 @@ public class UnlockableItem
 
 	public bool alreadyUnlocked;
 
+	public bool unlockedInChallengeFile;
+
 	public bool spawnPrefab;
 }

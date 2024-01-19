@@ -10,7 +10,7 @@ using UnityEngine;
 public class FlowermanAI : EnemyAI
 {
 	[CompilerGenerated]
-	private sealed class _003C_003Ec__DisplayClass52_0
+	private sealed class _003C_003Ec__DisplayClass53_0
 	{
 		public FlowermanAI _003C_003E4__this;
 
@@ -23,7 +23,7 @@ public class FlowermanAI : EnemyAI
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CkillAnimation_003Ed__52 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CkillAnimation_003Ed__53 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -31,7 +31,7 @@ public class FlowermanAI : EnemyAI
 
 		public FlowermanAI _003C_003E4__this;
 
-		private _003C_003Ec__DisplayClass52_0 _003C_003E8__1;
+		private _003C_003Ec__DisplayClass53_0 _003C_003E8__1;
 
 		private Vector3 _003CendPosition_003E5__2;
 
@@ -58,7 +58,7 @@ public class FlowermanAI : EnemyAI
 		}
 
 		[DebuggerHidden]
-		public _003CkillAnimation_003Ed__52(int _003C_003E1__state)
+		public _003CkillAnimation_003Ed__53(int _003C_003E1__state)
 		{
 		}
 
@@ -156,6 +156,8 @@ public class FlowermanAI : EnemyAI
 
 	private bool startingKillAnimationLocalClient;
 
+	private float getPathToFavoriteNodeInterval;
+
 	public override void Start()
 	{
 	}
@@ -231,7 +233,7 @@ public class FlowermanAI : EnemyAI
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CkillAnimation_003Ed__52))]
+	[IteratorStateMachine(typeof(_003CkillAnimation_003Ed__53))]
 	private IEnumerator killAnimation()
 	{
 		return null;

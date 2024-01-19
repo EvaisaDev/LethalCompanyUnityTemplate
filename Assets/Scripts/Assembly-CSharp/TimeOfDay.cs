@@ -11,7 +11,7 @@ using UnityEngine.Rendering.HighDefinition;
 public class TimeOfDay : NetworkBehaviour
 {
 	[CompilerGenerated]
-	private sealed class _003CfadeOutEffect_003Ed__79 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CfadeOutEffect_003Ed__80 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -44,7 +44,7 @@ public class TimeOfDay : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CfadeOutEffect_003Ed__79(int _003C_003E1__state)
+		public _003CfadeOutEffect_003Ed__80(int _003C_003E1__state)
 		{
 		}
 
@@ -71,7 +71,7 @@ public class TimeOfDay : NetworkBehaviour
 	}
 
 	[CompilerGenerated]
-	private sealed class _003CplaySoundDelayed_003Ed__78 : IEnumerator<object>, IEnumerator, IDisposable
+	private sealed class _003CplaySoundDelayed_003Ed__79 : IEnumerator<object>, IEnumerator, IDisposable
 	{
 		private int _003C_003E1__state;
 
@@ -104,7 +104,7 @@ public class TimeOfDay : NetworkBehaviour
 		}
 
 		[DebuggerHidden]
-		public _003CplaySoundDelayed_003Ed__78(int _003C_003E1__state)
+		public _003CplaySoundDelayed_003Ed__79(int _003C_003E1__state)
 		{
 		}
 
@@ -209,9 +209,9 @@ public class TimeOfDay : NetworkBehaviour
 
 	public LevelWeatherType currentLevelWeather;
 
-	public int currentWeatherVariable;
+	public float currentWeatherVariable;
 
-	public int currentWeatherVariable2;
+	public float currentWeatherVariable2;
 
 	[Space(4f)]
 	public CompanyMood currentCompanyMood;
@@ -221,7 +221,7 @@ public class TimeOfDay : NetworkBehaviour
 	[Space(4f)]
 	private float changeHUDTimeInterval;
 
-	private float syncTimeInterval;
+	private float nextTimeSync;
 
 	public bool shipLeavingAlertCalled;
 
@@ -286,6 +286,11 @@ public class TimeOfDay : NetworkBehaviour
 
 	public void SetInsideLightingDimness(bool doNotLerp = false, bool setValueTo = false)
 	{
+	}
+
+	private int RoundUpToNearestTen(float x)
+	{
+		return 0;
 	}
 
 	private void SyncGlobalTimeOnNetwork()
@@ -356,13 +361,13 @@ public class TimeOfDay : NetworkBehaviour
 	{
 	}
 
-	[IteratorStateMachine(typeof(_003CplaySoundDelayed_003Ed__78))]
+	[IteratorStateMachine(typeof(_003CplaySoundDelayed_003Ed__79))]
 	private IEnumerator playSoundDelayed(AudioClip clip, float delay, bool playRandomDaytimeMusic)
 	{
 		return null;
 	}
 
-	[IteratorStateMachine(typeof(_003CfadeOutEffect_003Ed__79))]
+	[IteratorStateMachine(typeof(_003CfadeOutEffect_003Ed__80))]
 	private IEnumerator fadeOutEffect(WeatherEffect effect, Vector3 moveFromPosition)
 	{
 		return null;
